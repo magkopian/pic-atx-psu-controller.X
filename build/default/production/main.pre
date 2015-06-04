@@ -1432,7 +1432,7 @@ extern void memcpyee(__eeprom unsigned char *to, const unsigned char *from, unsi
 extern __nonreentrant void _delay(unsigned long);
 
 
-# 16 "config_bits.h"
+# 18 "config_bits.h"
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -1442,7 +1442,7 @@ extern __nonreentrant void _delay(unsigned long);
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
-# 15 "lcd.h"
+# 17 "lcd.h"
 typedef struct {
 volatile unsigned char* PORT;
 unsigned RS :3;
@@ -1455,13 +1455,23 @@ unsigned D7 :3;
 
 extern LCD lcd;
 
-# 77
-void LCD_Write ( unsigned char c );
-void LCD_Port ( char a );
+# 83
 bool LCD_Init ( LCD display );
+
+
 void LCD_putc ( char a );
+
+
 void LCD_puts ( char *a );
+
+
 void LCD_putrs ( const char *a );
+
+
+void LCD_Write ( unsigned char c );
+
+
+void LCD_Out ( char a );
 
 # 15 "adc.h"
 void ADC_Init ( void );

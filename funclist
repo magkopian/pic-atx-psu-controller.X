@@ -1,6 +1,7 @@
 ___ftneg: CODE, 7741 0 8
 ___awdiv: CODE, 4377 0 93
 _LCD_Init: CODE, 2071 0 169
+_LCD_Out: CODE, 5184 0 194
 __stringtab: STRING, 4096 0 6
 __stringdata: STRING, 4220 0 119
 __powers_: STRING, 4181 0 39
@@ -25,7 +26,6 @@ _IO_Init: CODE, 7749 0 14
 _fround: CODE, 2240 0 412
 ___ftmul: CODE, 9 0 211
 ___llmod: CODE, 7948 0 76
-_LCD_Port: CODE, 5184 0 194
 _LCD_Write: CODE, 8101 0 91
 _ADC_Read: CODE, 4763 0 121
 ___wmul: CODE, 4342 0 35

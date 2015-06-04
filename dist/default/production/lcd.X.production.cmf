@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/cgtxjLIpR.obj
+$/tmp/cgts64ADj.obj
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production/lcd.X.production.obj
@@ -257,23 +257,23 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":1448 7CD text1 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":545 7D8 text1 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":1547 7D9 text1 CODE
-"/tmp/cgt520sFu":839 7DE cinit CODE
-"/tmp/cgt520sFu":842 7DE cinit CODE
-"/tmp/cgt520sFu":856 7DE cinit CODE
-"/tmp/cgt520sFu":857 7DF cinit CODE
-"/tmp/cgt520sFu":858 7E0 cinit CODE
-"/tmp/cgt520sFu":859 7E5 cinit CODE
-"/tmp/cgt520sFu":860 7E6 cinit CODE
-"/tmp/cgt520sFu":861 7EB cinit CODE
-"/tmp/cgt520sFu":862 7EC cinit CODE
-"/tmp/cgt520sFu":863 7F1 cinit CODE
-"/tmp/cgt520sFu":864 7F2 cinit CODE
-"/tmp/cgt520sFu":865 7F7 cinit CODE
-"/tmp/cgt520sFu":866 7F8 cinit CODE
-"/tmp/cgt520sFu":867 7FB cinit CODE
-"/tmp/cgt520sFu":873 7FC cinit CODE
-"/tmp/cgt520sFu":874 7FC cinit CODE
-"/tmp/cgt520sFu":875 7FD cinit CODE
+"/tmp/cgtVrbwqr":839 7DE cinit CODE
+"/tmp/cgtVrbwqr":842 7DE cinit CODE
+"/tmp/cgtVrbwqr":856 7DE cinit CODE
+"/tmp/cgtVrbwqr":857 7DF cinit CODE
+"/tmp/cgtVrbwqr":858 7E0 cinit CODE
+"/tmp/cgtVrbwqr":859 7E5 cinit CODE
+"/tmp/cgtVrbwqr":860 7E6 cinit CODE
+"/tmp/cgtVrbwqr":861 7EB cinit CODE
+"/tmp/cgtVrbwqr":862 7EC cinit CODE
+"/tmp/cgtVrbwqr":863 7F1 cinit CODE
+"/tmp/cgtVrbwqr":864 7F2 cinit CODE
+"/tmp/cgtVrbwqr":865 7F7 cinit CODE
+"/tmp/cgtVrbwqr":866 7F8 cinit CODE
+"/tmp/cgtVrbwqr":867 7FB cinit CODE
+"/tmp/cgtVrbwqr":873 7FC cinit CODE
+"/tmp/cgtVrbwqr":874 7FC cinit CODE
+"/tmp/cgtVrbwqr":875 7FD cinit CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":4 804 text6 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":6 807 text6 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":43 808 text6 CODE
@@ -282,27 +282,27 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":46 810 text6 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":47 812 text6 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":50 815 text6 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":59 817 text23 CODE
 "/home/manolis/MPLABXProjects/lcd.X/lcd.c":61 817 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":67 828 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":68 832 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":69 833 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":70 834 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":71 83C text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":72 83D text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":73 83E text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":74 846 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":89 847 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":92 852 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":93 858 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":94 863 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":95 869 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":96 874 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":99 87A text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":102 880 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":105 88C text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":107 898 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":109 8B5 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":63 817 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":69 828 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":70 832 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":71 833 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":72 834 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":73 83C text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":74 83D text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":75 83E text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":76 846 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":91 847 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":94 852 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":95 858 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":96 863 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":97 869 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":98 874 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":101 87A text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":104 880 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":107 88C text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":109 898 text23 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":111 8B5 text23 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":409 8C0 text4 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":413 8C3 text4 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":414 8C7 text4 CODE
@@ -501,34 +501,34 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":70 138B text14 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":71 138E text14 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":72 1399 text14 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":114 13A2 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":116 13A3 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":117 13B9 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":119 13C8 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":120 13E1 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":121 13E6 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":123 1400 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":125 1407 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":126 1420 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":127 1425 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":129 143F text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":16 1440 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":18 1441 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":19 1443 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":20 1459 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":22 145A text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":25 1471 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":26 1473 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":27 148A text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":29 148B text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":32 14A3 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":33 14A5 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":34 14B9 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":36 14BA text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":39 14CF text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":40 14D1 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":41 14E8 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":43 14E9 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":116 13A2 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":118 13A3 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":119 13B9 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":121 13C8 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":122 13E1 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":123 13E6 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":125 1400 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":127 1407 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":128 1420 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":129 1425 text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":131 143F text22 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":18 1440 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":20 1441 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":21 1443 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":22 1459 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":24 145A text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":27 1471 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":28 1473 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":29 148A text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":31 148B text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":34 14A3 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":35 14A5 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":36 14B9 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":38 14BA text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":41 14CF text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":42 14D1 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":43 14E8 text25 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":45 14E9 text25 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftdivl.c":60 1502 text9 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftdivl.c":66 1502 text9 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftdivl.c":67 1513 text9 CODE
@@ -662,14 +662,14 @@ $dist/default/production/lcd.X.production.obj
 "/home/manolis/MPLABXProjects/lcd.X/adc.c":26 1E93 text29 CODE
 "/home/manolis/MPLABXProjects/lcd.X/adc.c":28 1E98 text29 CODE
 "/home/manolis/MPLABXProjects/lcd.X/adc.c":30 1E9B text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":131 1E9C text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":133 1E9D text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":134 1EA8 text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":133 1EB4 text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":139 1EBB text21 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":141 1EBC text21 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":142 1EC9 text21 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":141 1ED6 text21 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":133 1E9C text20 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":135 1E9D text20 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":136 1EA8 text20 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":135 1EB4 text20 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":141 1EBB text21 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":143 1EBC text21 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":144 1EC9 text21 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":143 1ED6 text21 CODE
 "/opt/microchip/xc8/v1.33/sources/common/lltoft.c":35 1EDD text12 CODE
 "/opt/microchip/xc8/v1.33/sources/common/lltoft.c":38 1EDD text12 CODE
 "/opt/microchip/xc8/v1.33/sources/common/lltoft.c":41 1EE3 text12 CODE
@@ -709,13 +709,13 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/awmod.c":32 1F96 text7 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awmod.c":33 1F99 text7 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awmod.c":34 1F9E text7 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":48 1FA5 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":50 1FA6 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":51 1FBD text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":53 1FC3 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":54 1FDC text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":55 1FE5 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":57 1FFF text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":50 1FA5 text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":52 1FA6 text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":53 1FBD text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":55 1FC3 text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":56 1FDC text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":57 1FE5 text24 CODE
+"/home/manolis/MPLABXProjects/lcd.X/lcd.c":59 1FFF text24 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -728,7 +728,6 @@ $dist/default/production/lcd.X.production.obj
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-LCD_Port@c 73 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ___lldiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 sprintf@fval C3 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
 ___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
@@ -752,14 +751,15 @@ __size_of___ftsub 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ___ftneg@f1 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 __end_of_LCD_Init 1180 0 CODE 0 text23 dist/default/production/lcd.X.production.obj
 ___ftadd@f2 58 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
+__end_of_LCD_Out 2A04 0 CODE 0 text25 dist/default/production/lcd.X.production.obj
 ___ftsub@f1 65 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 _main 19F6 0 CODE 0 maintext dist/default/production/lcd.X.production.obj
-___sp 0 0 STACK 2 stack /tmp/cgtxjLIpR.obj
+___sp 0 0 STACK 2 stack /tmp/cgts64ADj.obj
 btemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ttemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
-start 0 0 CODE 0 init /tmp/cgtxjLIpR.obj
+start 0 0 CODE 0 init /tmp/cgts64ADj.obj
 ?___ftadd 55 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 LCD_puts@i 79 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ___fttol@f1 4E 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
@@ -771,7 +771,7 @@ _TRISA 85 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _TRISB 86 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _TRISC 87 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _PORTA 5 0 ABS 0 - dist/default/production/lcd.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec /tmp/cgtxjLIpR.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgts64ADj.obj
 _PORTB 6 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _PORTC 7 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ltemp0 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
@@ -827,8 +827,7 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 ?___ftmul 35 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 sprintf@ap AD 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/cgtxjLIpR.obj
-_LCD_Port 2880 0 CODE 0 text25 dist/default/production/lcd.X.production.obj
+___int_sp 0 0 STACK 2 stack /tmp/cgts64ADj.obj
 ?___lldiv 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ?___awdiv 77 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ___lltoft 3DBA 0 CODE 0 text12 dist/default/production/lcd.X.production.obj
@@ -869,14 +868,14 @@ __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
 ?_scale 45 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 ___ftge 23A8 0 CODE 0 text19 dist/default/production/lcd.X.production.obj
-stackhi 0 0 ABS 0 - /tmp/cgtxjLIpR.obj
+stackhi 0 0 ABS 0 - /tmp/cgts64ADj.obj
 sprintf@sp C6 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
 _fround 1180 0 CODE 0 text4 dist/default/production/lcd.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 ___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
-stacklo 0 0 ABS 0 - /tmp/cgtxjLIpR.obj
+stacklo 0 0 ABS 0 - /tmp/cgts64ADj.obj
 ___bmul 1008 0 CODE 0 text6 dist/default/production/lcd.X.production.obj
 __Hinit 0 0 CODE 0 init -
 __Linit 0 0 CODE 0 init -
@@ -950,6 +949,7 @@ __end_of__npowers_ 20AA 0 STRING 0 strings dist/default/production/lcd.X.product
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lclrtext 0 0 ABS 0 clrtext -
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production/lcd.X.production.obj
+__size_of_LCD_Out 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 __tdiv_to_l_@f1 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 __end_of__div_to_l_ 3000 0 CODE 0 text10 dist/default/production/lcd.X.production.obj
 __size_of_scale 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
@@ -971,6 +971,7 @@ ___ftsub 3CC2 0 CODE 0 text15 dist/default/production/lcd.X.production.obj
 ___ftpack@sign 74 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 _sprintf 1B8 0 CODE 0 text1 dist/default/production/lcd.X.production.obj
 __Hspace_1 1E2 0 ABS 0 - -
+_LCD_Out 2880 0 CODE 0 text25 dist/default/production/lcd.X.production.obj
 __Lspace_1 0 0 ABS 0 - -
 ___ftadd@exp1 61 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 _IO_Init 3C8A 0 CODE 0 text26 dist/default/production/lcd.X.production.obj
@@ -1028,7 +1029,6 @@ __ptext16 2B8A 0 CODE 0 text16 dist/default/production/lcd.X.production.obj
 __ptext26 3C8A 0 CODE 0 text26 dist/default/production/lcd.X.production.obj
 ___llmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 __ptext17 2466 0 CODE 0 text17 dist/default/production/lcd.X.production.obj
-__size_of_LCD_Port 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 __end_of_LCD_putc 2880 0 CODE 0 text22 dist/default/production/lcd.X.production.obj
 ___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 __end_of_LCD_puts 3D76 0 CODE 0 text20 dist/default/production/lcd.X.production.obj
@@ -1052,7 +1052,6 @@ ___awdiv@divisor 77 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.produc
 __end_of___ftmul 1B8 0 CODE 0 text5 dist/default/production/lcd.X.production.obj
 __end_of___llmod 3EB0 0 CODE 0 text13 dist/default/production/lcd.X.production.obj
 __tdiv_to_l_@cntr 24 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
-__end_of_LCD_Port 2A04 0 CODE 0 text25 dist/default/production/lcd.X.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -1062,17 +1061,17 @@ __pcstackBANK3 190 0 BANK3 1 cstackBANK3 dist/default/production/lcd.X.productio
 __stringdata 20F8 0 STRING 0 strings dist/default/production/lcd.X.production.obj
 __tdiv_to_l_@exp1 25 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 __div_to_l_@cntr 24 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
-intlevel0 0 0 CODE 0 functab /tmp/cgtxjLIpR.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgts64ADj.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
-intlevel1 0 0 CODE 0 functab /tmp/cgtxjLIpR.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgts64ADj.obj
 __end_of_LCD_Write 4000 0 CODE 0 text24 dist/default/production/lcd.X.production.obj
 __size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
-intlevel2 0 0 CODE 0 functab /tmp/cgtxjLIpR.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgts64ADj.obj
 ___lltoft@exp 34 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
-intlevel3 0 0 CODE 0 functab /tmp/cgtxjLIpR.obj
-intlevel4 0 0 CODE 0 functab /tmp/cgtxjLIpR.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgts64ADj.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgts64ADj.obj
 __tdiv_to_l_@f2 73 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
-intlevel5 0 0 CODE 0 functab /tmp/cgtxjLIpR.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgts64ADj.obj
 __end_of_ADC_Read 2628 0 CODE 0 text27 dist/default/production/lcd.X.production.obj
 main@start_channel 1D4 0 BANK3 1 cstackBANK3 dist/default/production/lcd.X.production.obj
 __size_of_LCD_putc 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
@@ -1124,6 +1123,7 @@ __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 __size_of___bmul 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 __end_of___bmul 102E 0 CODE 0 text6 dist/default/production/lcd.X.production.obj
 sprintf@c C9 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
+LCD_Out@c 73 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 __size_of___llmod 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ADC_Read@i 2C 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 LCD_puts@a 7B 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj

@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.33 build 59893 
-                                                                                               Wed May 27 15:25:59 2015
+                                                                                               Thu Jun  4 14:18:53 2015
 
 Microchip Technology Omniscient Code Generator (Lite mode) build 59893
      1                           	processor	16F876A
@@ -687,10 +687,10 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    681  0070                     ??_isdigit:	
    682                           ; 1 bit 
    683                           
-   684  0070                     ?_LCD_Port:	
+   684  0070                     ?_LCD_Out:	
    685                           ; 0 bytes @ 0x0
    686                           
-   687  0070                     ??_LCD_Port:	
+   687  0070                     ??_LCD_Out:	
    688                           ; 0 bytes @ 0x0
    689                           
    690  0070                     ?_LCD_putc:	
@@ -765,7 +765,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
    759                           ; 2 bytes @ 0x2
    760  0072                     	ds	1
    761  0073                     ??___ftneg:	
-   762  0073                     LCD_Port@c:	
+   762  0073                     LCD_Out@c:	
    763                           ; 0 bytes @ 0x3
    764                           
    765  0073                     ___ftpack@exp:	
@@ -7330,7 +7330,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7306  1E9C                     __ptext20:	
   7307 ;; *************** function _LCD_puts *****************
   7308 ;; Defined at:
-  7309 ;;		line 131 in file "lcd.c"
+  7309 ;;		line 133 in file "lcd.c"
   7310 ;; Parameters:    Size  Location     Type
   7311 ;;  a               1    wreg     PTR unsigned char 
   7312 ;;		 -> main@current_str(45), 
@@ -7370,7 +7370,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7346                           ;LCD_puts@a stored from wreg
   7347  1E9C  00FB               	movwf	LCD_puts@a
   7348                           
-  7349                           ;lcd.c: 133: for ( int i = 0; a[i] != '\0'; ++i ) {
+  7349                           ;lcd.c: 135: for ( int i = 0; a[i] != '\0'; ++i ) {
   7350  1E9D  01F9               	clrf	LCD_puts@i
   7351  1E9E  01FA               	clrf	LCD_puts@i+1
   7352  1E9F                     l3112:	
@@ -7384,7 +7384,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7360  1EA6  1903               	btfsc	3,2
   7361  1EA7  0008               	return
   7362                           
-  7363                           ;lcd.c: 134: LCD_putc(a[i]);
+  7363                           ;lcd.c: 136: LCD_putc(a[i]);
   7364  1EA8  0879               	movf	LCD_puts@i,w
   7365  1EA9  077B               	addwf	LCD_puts@a,w
   7366  1EAA  00F8               	movwf	??_LCD_puts
@@ -7406,7 +7406,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7382  1EBB                     __ptext21:	
   7383 ;; *************** function _LCD_putrs *****************
   7384 ;; Defined at:
-  7385 ;;		line 139 in file "lcd.c"
+  7385 ;;		line 141 in file "lcd.c"
   7386 ;; Parameters:    Size  Location     Type
   7387 ;;  a               1    wreg     PTR const unsigned char 
   7388 ;;		 -> STR_7(21), STR_6(21), STR_5(21), STR_2(21), 
@@ -7448,7 +7448,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7424                           ;LCD_putrs@a stored from wreg
   7425  1EBB  00FA               	movwf	LCD_putrs@a
   7426                           
-  7427                           ;lcd.c: 141: for ( int i = 0; a[i] != '\0'; ++i ) {
+  7427                           ;lcd.c: 143: for ( int i = 0; a[i] != '\0'; ++i ) {
   7428  1EBC  01F8               	clrf	LCD_putrs@i
   7429  1EBD  01F9               	clrf	LCD_putrs@i+1
   7430  1EBE                     l2830:	
@@ -7460,7 +7460,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7436  1EC7  1903               	btfsc	3,2
   7437  1EC8  0008               	return
   7438                           
-  7439                           ;lcd.c: 142: LCD_putc(a[i]);
+  7439                           ;lcd.c: 144: LCD_putc(a[i]);
   7440  1EC9  0878               	movf	LCD_putrs@i,w
   7441  1ECA  077A               	addwf	LCD_putrs@a,w
   7442  1ECB  0084               	movwf	4
@@ -7479,7 +7479,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7455  13A2                     __ptext22:	
   7456 ;; *************** function _LCD_putc *****************
   7457 ;; Defined at:
-  7458 ;;		line 114 in file "lcd.c"
+  7458 ;;		line 116 in file "lcd.c"
   7459 ;; Parameters:    Size  Location     Type
   7460 ;;  c               1    wreg     unsigned char 
   7461 ;; Auto vars:     Size  Location     Type
@@ -7501,7 +7501,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7477 ;; Hardware stack levels used:    1
   7478 ;; Hardware stack levels required when called:    1
   7479 ;; This function calls:
-  7480 ;;		_LCD_Port
+  7480 ;;		_LCD_Out
   7481 ;; This function is called by:
   7482 ;;		_LCD_puts
   7483 ;;		_LCD_putrs
@@ -7517,7 +7517,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7493                           ;LCD_putc@c stored from wreg
   7494  13A2  00F7               	movwf	LCD_putc@c
   7495                           
-  7496                           ;lcd.c: 116: *(lcd.PORT) |= 1 << lcd.RS;
+  7496                           ;lcd.c: 118: *(lcd.PORT) |= 1 << lcd.RS;
   7497  13A3  3001               	movlw	1
   7498  13A4  00F4               	movwf	??_LCD_putc
   7499  13A5  1683               	bsf	3,5	;RP0=1, select bank1
@@ -7543,7 +7543,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7519  13B7  0875               	movf	??_LCD_putc+1,w
   7520  13B8  0480               	iorwf	0,f
   7521                           
-  7522                           ;lcd.c: 117: LCD_Port((c & 0xF0) >> 4);
+  7522                           ;lcd.c: 119: LCD_Out((c & 0xF0) >> 4);
   7523  13B9  0877               	movf	LCD_putc@c,w
   7524  13BA  00F4               	movwf	??_LCD_putc
   7525  13BB  3004               	movlw	4
@@ -7555,9 +7555,9 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7531  13C0  2BBC               	goto	u3265
   7532  13C1  0874               	movf	??_LCD_putc,w
   7533  13C2  390F               	andlw	15
-  7534  13C3  160A  118A  2440  160A  118A  	fcall	_LCD_Port
+  7534  13C3  160A  118A  2440  160A  118A  	fcall	_LCD_Out
   7535                           
-  7536                           ;lcd.c: 119: *(lcd.PORT) |= 1 << lcd.EN;
+  7536                           ;lcd.c: 121: *(lcd.PORT) |= 1 << lcd.EN;
   7537  13C8  3001               	movlw	1
   7538  13C9  00F4               	movwf	??_LCD_putc
   7539  13CA  1683               	bsf	3,5	;RP0=1, select bank1
@@ -7586,7 +7586,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7562  13DF  0876               	movf	??_LCD_putc+2,w
   7563  13E0  0480               	iorwf	0,f
   7564                           
-  7565                           ;lcd.c: 120: _delay((unsigned long)((40)*(8000000/4000000.0)));
+  7565                           ;lcd.c: 122: _delay((unsigned long)((40)*(8000000/4000000.0)));
   7566  13E1  301A               	movlw	26
   7567  13E2  00F4               	movwf	??_LCD_putc
   7568  13E3                     u4837:	
@@ -7594,7 +7594,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7570  13E4  2BE3               	goto	u4837
   7571  13E5  0000               	nop
   7572                           
-  7573                           ;lcd.c: 121: *(lcd.PORT) &= ~(1 << lcd.EN);
+  7573                           ;lcd.c: 123: *(lcd.PORT) &= ~(1 << lcd.EN);
   7574  13E6  3001               	movlw	1
   7575  13E7  00F4               	movwf	??_LCD_putc
   7576  13E8  1683               	bsf	3,5	;RP0=1, select bank1
@@ -7624,12 +7624,12 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7600  13FE  0876               	movf	??_LCD_putc+2,w
   7601  13FF  0580               	andwf	0,f
   7602                           
-  7603                           ;lcd.c: 123: LCD_Port(c & 0x0F);
+  7603                           ;lcd.c: 125: LCD_Out(c & 0x0F);
   7604  1400  0877               	movf	LCD_putc@c,w
   7605  1401  390F               	andlw	15
-  7606  1402  160A  118A  2440  160A  118A  	fcall	_LCD_Port
+  7606  1402  160A  118A  2440  160A  118A  	fcall	_LCD_Out
   7607                           
-  7608                           ;lcd.c: 125: *(lcd.PORT) |= 1 << lcd.EN;
+  7608                           ;lcd.c: 127: *(lcd.PORT) |= 1 << lcd.EN;
   7609  1407  3001               	movlw	1
   7610  1408  00F4               	movwf	??_LCD_putc
   7611  1409  1683               	bsf	3,5	;RP0=1, select bank1
@@ -7658,7 +7658,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7634  141E  0876               	movf	??_LCD_putc+2,w
   7635  141F  0480               	iorwf	0,f
   7636                           
-  7637                           ;lcd.c: 126: _delay((unsigned long)((40)*(8000000/4000000.0)));
+  7637                           ;lcd.c: 128: _delay((unsigned long)((40)*(8000000/4000000.0)));
   7638  1420  301A               	movlw	26
   7639  1421  00F4               	movwf	??_LCD_putc
   7640  1422                     u4847:	
@@ -7666,7 +7666,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7642  1423  2C22               	goto	u4847
   7643  1424  0000               	nop
   7644                           
-  7645                           ;lcd.c: 127: *(lcd.PORT) &= ~(1 << lcd.EN);
+  7645                           ;lcd.c: 129: *(lcd.PORT) &= ~(1 << lcd.EN);
   7646  1425  3001               	movlw	1
   7647  1426  00F4               	movwf	??_LCD_putc
   7648  1427  1683               	bsf	3,5	;RP0=1, select bank1
@@ -7702,7 +7702,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7678  0817                     __ptext23:	
   7679 ;; *************** function _LCD_Init *****************
   7680 ;; Defined at:
-  7681 ;;		line 59 in file "lcd.c"
+  7681 ;;		line 61 in file "lcd.c"
   7682 ;; Parameters:    Size  Location     Type
   7683 ;;  display         5    8[COMMON] struct .
   7684 ;; Auto vars:     Size  Location     Type
@@ -7734,7 +7734,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7710                           ;psect for function _LCD_Init
   7711  0817                     _LCD_Init:	
   7712                           
-  7713                           ;lcd.c: 61: lcd = display;
+  7713                           ;lcd.c: 63: lcd = display;
   7714                           
   7715                           ;incstack = 0
   7716                           ; Regs used in _LCD_Init: [wreg-fsr0h+status,2+status,0+pclath+cstack]
@@ -7756,7 +7756,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7732  0826  087C               	movf	LCD_Init@display+4,w
   7733  0827  0080               	movwf	0
   7734                           
-  7735                           ;lcd.c: 67: if ( lcd.PORT == &PORTA ) {
+  7735                           ;lcd.c: 69: if ( lcd.PORT == &PORTA ) {
   7736  0828  3000               	movlw	0
   7737  0829  1683               	bsf	3,5	;RP0=1, select bank1
   7738  082A  1303               	bcf	3,6	;RP1=0, select bank1
@@ -7769,14 +7769,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7745  0830  1D03               	skipz
   7746  0831  2834               	goto	l2766
   7747                           
-  7748                           ;lcd.c: 68: TRISA = 0x00;
+  7748                           ;lcd.c: 70: TRISA = 0x00;
   7749  0832  0185               	clrf	5	;volatile
   7750                           
-  7751                           ;lcd.c: 69: }
+  7751                           ;lcd.c: 71: }
   7752  0833  2847               	goto	l2774
   7753  0834                     l2766:	
   7754                           
-  7755                           ;lcd.c: 70: else if ( lcd.PORT == &PORTB ) {
+  7755                           ;lcd.c: 72: else if ( lcd.PORT == &PORTB ) {
   7756  0834  3000               	movlw	0
   7757  0835  064B               	xorwf	(_lcd+1)^(0+128),w
   7758  0836  1D03               	skipz
@@ -7787,14 +7787,14 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7763  083A  1D03               	skipz
   7764  083B  283E               	goto	l2770
   7765                           
-  7766                           ;lcd.c: 71: TRISB = 0x00;
+  7766                           ;lcd.c: 73: TRISB = 0x00;
   7767  083C  0186               	clrf	6	;volatile
   7768                           
-  7769                           ;lcd.c: 72: }
+  7769                           ;lcd.c: 74: }
   7770  083D  2847               	goto	l2774
   7771  083E                     l2770:	
   7772                           
-  7773                           ;lcd.c: 73: else if ( lcd.PORT == &PORTC ) {
+  7773                           ;lcd.c: 75: else if ( lcd.PORT == &PORTC ) {
   7774  083E  3000               	movlw	0
   7775  083F  064B               	xorwf	(_lcd+1)^(0+128),w
   7776  0840  1D03               	skipz
@@ -7805,18 +7805,18 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7781  0844  1D03               	skipz
   7782  0845  0008               	return
   7783                           
-  7784                           ;lcd.c: 74: TRISC = 0x00;
+  7784                           ;lcd.c: 76: TRISC = 0x00;
   7785  0846  0187               	clrf	7	;volatile
   7786  0847                     l2774:	
-  7787                           ;lcd.c: 84: else {
-  7788                           ;lcd.c: 85: return 0;
+  7787                           ;lcd.c: 86: else {
+  7788                           ;lcd.c: 87: return 0;
   7789                           ;	Return value of _LCD_Init is never used
   7790                           
-  7791                           ;lcd.c: 75: }
+  7791                           ;lcd.c: 77: }
   7792                           
   7793                           
-  7794                           ;lcd.c: 86: }
-  7795                           ;lcd.c: 89: _delay((unsigned long)((20)*(8000000/4000.0)));
+  7794                           ;lcd.c: 88: }
+  7795                           ;lcd.c: 91: _delay((unsigned long)((20)*(8000000/4000.0)));
   7796  0847  3034               	movlw	52
   7797  0848  1283               	bcf	3,5	;RP0=0, select bank0
   7798  0849  1303               	bcf	3,6	;RP1=0, select bank0
@@ -7830,11 +7830,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7806  0850  284D               	goto	u4857
   7807  0851  2852               	nop2
   7808                           
-  7809                           ;lcd.c: 92: LCD_Write(0x03);
+  7809                           ;lcd.c: 94: LCD_Write(0x03);
   7810  0852  3003               	movlw	3
   7811  0853  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7812                           
-  7813                           ;lcd.c: 93: _delay((unsigned long)((5)*(8000000/4000.0)));
+  7813                           ;lcd.c: 95: _delay((unsigned long)((5)*(8000000/4000.0)));
   7814  0858  300D               	movlw	13
   7815  0859  1283               	bcf	3,5	;RP0=0, select bank0
   7816  085A  1303               	bcf	3,6	;RP1=0, select bank0
@@ -7848,11 +7848,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7824  0861  285E               	goto	u4867
   7825  0862  2863               	nop2
   7826                           
-  7827                           ;lcd.c: 94: LCD_Write(0x03);
+  7827                           ;lcd.c: 96: LCD_Write(0x03);
   7828  0863  3003               	movlw	3
   7829  0864  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7830                           
-  7831                           ;lcd.c: 95: _delay((unsigned long)((16)*(8000000/4000.0)));
+  7831                           ;lcd.c: 97: _delay((unsigned long)((16)*(8000000/4000.0)));
   7832  0869  302A               	movlw	42
   7833  086A  1283               	bcf	3,5	;RP0=0, select bank0
   7834  086B  1303               	bcf	3,6	;RP1=0, select bank0
@@ -7866,29 +7866,29 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7842  0872  286F               	goto	u4877
   7843  0873  2874               	nop2
   7844                           
-  7845                           ;lcd.c: 96: LCD_Write(0x03);
+  7845                           ;lcd.c: 98: LCD_Write(0x03);
   7846  0874  3003               	movlw	3
   7847  0875  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7848                           
-  7849                           ;lcd.c: 99: LCD_Write(0x02);
+  7849                           ;lcd.c: 101: LCD_Write(0x02);
   7850  087A  3002               	movlw	2
   7851  087B  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7852                           
-  7853                           ;lcd.c: 102: do { LCD_Write( (0x28 & 0xF0) >> 4 ); LCD_Write( 0x28 & 0x0F); } while ( 0 
+  7853                           ;lcd.c: 104: do { LCD_Write( (0x28 & 0xF0) >> 4 ); LCD_Write( 0x28 & 0x0F); } while ( 0 
       +                          );
   7854  0880  3002               	movlw	2
   7855  0881  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7856  0886  3008               	movlw	8
   7857  0887  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7858                           
-  7859                           ;lcd.c: 105: do { LCD_Write( (0x06 & 0xF0) >> 4 ); LCD_Write( 0x06 & 0x0F); } while ( 0 
+  7859                           ;lcd.c: 107: do { LCD_Write( (0x06 & 0xF0) >> 4 ); LCD_Write( 0x06 & 0x0F); } while ( 0 
       +                          );
   7860  088C  3000               	movlw	0
   7861  088D  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7862  0892  3006               	movlw	6
   7863  0893  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7864                           
-  7865                           ;lcd.c: 107: do { unsigned char cmd = 0x08; if ( 1 == 1 ) { cmd |= 1 << 2; } if ( 0 == 1
+  7865                           ;lcd.c: 109: do { unsigned char cmd = 0x08; if ( 1 == 1 ) { cmd |= 1 << 2; } if ( 0 == 1
       +                           ) { cmd |= 1 << 1; } if ( 0 == 1 ) { cmd |= 1; } do { LCD_Write( (cmd & 0xF0) >> 4 ); L
       +                          CD_Write( cmd & 0x0F); } while ( 0 ); } while ( 0 );
   7866  0898  3008               	movlw	8
@@ -7914,7 +7914,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7886  08AF  390F               	andlw	15
   7887  08B0  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
   7888                           
-  7889                           ;lcd.c: 109: do { LCD_Write( (0x01 & 0xF0) >> 4 ); LCD_Write( 0x01 & 0x0F); } while ( 0 
+  7889                           ;lcd.c: 111: do { LCD_Write( (0x01 & 0xF0) >> 4 ); LCD_Write( 0x01 & 0x0F); } while ( 0 
       +                          );
   7890  08B5  3000               	movlw	0
   7891  08B6  160A  158A  27A5  120A  158A  	fcall	_LCD_Write
@@ -7922,7 +7922,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7893  08BC  160A  158A  27A5   	fcall	_LCD_Write
   7894  08BF  0008               	return
   7895  08C0                     __end_of_LCD_Init:	
-  7896                           ;lcd.c: 111: return 1;
+  7896                           ;lcd.c: 113: return 1;
   7897                           ;	Return value of _LCD_Init is never used
   7898                           
   7899                           
@@ -7930,7 +7930,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7901  1FA5                     __ptext24:	
   7902 ;; *************** function _LCD_Write *****************
   7903 ;; Defined at:
-  7904 ;;		line 48 in file "lcd.c"
+  7904 ;;		line 50 in file "lcd.c"
   7905 ;; Parameters:    Size  Location     Type
   7906 ;;  c               1    wreg     unsigned char 
   7907 ;; Auto vars:     Size  Location     Type
@@ -7952,7 +7952,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7923 ;; Hardware stack levels used:    1
   7924 ;; Hardware stack levels required when called:    1
   7925 ;; This function calls:
-  7926 ;;		_LCD_Port
+  7926 ;;		_LCD_Out
   7927 ;; This function is called by:
   7928 ;;		_main
   7929 ;;		_LCD_Init
@@ -7968,7 +7968,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7939                           ;LCD_Write@c stored from wreg
   7940  1FA5  00F7               	movwf	LCD_Write@c
   7941                           
-  7942                           ;lcd.c: 50: *(lcd.PORT) &= ~(1 << lcd.RS);
+  7942                           ;lcd.c: 52: *(lcd.PORT) &= ~(1 << lcd.RS);
   7943  1FA6  3001               	movlw	1
   7944  1FA7  00F4               	movwf	??_LCD_Write
   7945  1FA8  1683               	bsf	3,5	;RP0=1, select bank1
@@ -7995,11 +7995,11 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7966  1FBB  0875               	movf	??_LCD_Write+1,w
   7967  1FBC  0580               	andwf	0,f
   7968                           
-  7969                           ;lcd.c: 51: LCD_Port(c);
+  7969                           ;lcd.c: 53: LCD_Out(c);
   7970  1FBD  0877               	movf	LCD_Write@c,w
-  7971  1FBE  160A  118A  2440  160A  158A  	fcall	_LCD_Port
+  7971  1FBE  160A  118A  2440  160A  158A  	fcall	_LCD_Out
   7972                           
-  7973                           ;lcd.c: 53: *(lcd.PORT) |= 1 << lcd.EN;
+  7973                           ;lcd.c: 55: *(lcd.PORT) |= 1 << lcd.EN;
   7974  1FC3  3001               	movlw	1
   7975  1FC4  00F4               	movwf	??_LCD_Write
   7976  1FC5  1683               	bsf	3,5	;RP0=1, select bank1
@@ -8028,7 +8028,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   7999  1FDA  0876               	movf	??_LCD_Write+2,w
   8000  1FDB  0480               	iorwf	0,f
   8001                           
-  8002                           ;lcd.c: 54: _delay((unsigned long)((4)*(8000000/4000.0)));
+  8002                           ;lcd.c: 56: _delay((unsigned long)((4)*(8000000/4000.0)));
   8003  1FDC  300B               	movlw	11
   8004  1FDD  00F5               	movwf	??_LCD_Write+1
   8005  1FDE  3062               	movlw	98
@@ -8040,7 +8040,7 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   8011  1FE3  2FE0               	goto	u4887
   8012  1FE4  0000               	nop
   8013                           
-  8014                           ;lcd.c: 55: *(lcd.PORT) &= ~(1 << lcd.EN);
+  8014                           ;lcd.c: 57: *(lcd.PORT) &= ~(1 << lcd.EN);
   8015  1FE5  3001               	movlw	1
   8016  1FE6  00F4               	movwf	??_LCD_Write
   8017  1FE7  1683               	bsf	3,5	;RP0=1, select bank1
@@ -8074,9 +8074,9 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   8045                           
   8046                           	psect	text25
   8047  1440                     __ptext25:	
-  8048 ;; *************** function _LCD_Port *****************
+  8048 ;; *************** function _LCD_Out *****************
   8049 ;; Defined at:
-  8050 ;;		line 16 in file "lcd.c"
+  8050 ;;		line 18 in file "lcd.c"
   8051 ;; Parameters:    Size  Location     Type
   8052 ;;  c               1    wreg     unsigned char 
   8053 ;; Auto vars:     Size  Location     Type
@@ -8105,21 +8105,21 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   8076 ;;
   8077                           
   8078                           
-  8079                           ;psect for function _LCD_Port
-  8080  1440                     _LCD_Port:	
+  8079                           ;psect for function _LCD_Out
+  8080  1440                     _LCD_Out:	
   8081                           
   8082                           ;incstack = 0
-  8083                           ; Regs used in _LCD_Port: [wreg-fsr0h+status,2+status,0]
-  8084                           ;LCD_Port@c stored from wreg
-  8085  1440  00F3               	movwf	LCD_Port@c
+  8083                           ; Regs used in _LCD_Out: [wreg-fsr0h+status,2+status,0]
+  8084                           ;LCD_Out@c stored from wreg
+  8085  1440  00F3               	movwf	LCD_Out@c
   8086                           
-  8087                           ;lcd.c: 18: if ( c & 1 ){
-  8088  1441  1C73               	btfss	LCD_Port@c,0
+  8087                           ;lcd.c: 20: if ( c & 1 ){
+  8088  1441  1C73               	btfss	LCD_Out@c,0
   8089  1442  2C5A               	goto	l2168
   8090                           
-  8091                           ;lcd.c: 19: *(lcd.PORT) |= 1 << lcd.D4;
+  8091                           ;lcd.c: 21: *(lcd.PORT) |= 1 << lcd.D4;
   8092  1443  3001               	movlw	1
-  8093  1444  00F0               	movwf	??_LCD_Port
+  8093  1444  00F0               	movwf	??_LCD_Out
   8094  1445  1683               	bsf	3,5	;RP0=1, select bank1
   8095  1446  1303               	bcf	3,6	;RP1=0, select bank1
   8096  1447  084D               	movf	(_lcd^(0+128)+3),w
@@ -8128,29 +8128,29 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   8099  144A  2C4D               	goto	u2524
   8100  144B                     u2525:	
   8101  144B  1003               	clrc
-  8102  144C  0DF0               	rlf	??_LCD_Port,f
+  8102  144C  0DF0               	rlf	??_LCD_Out,f
   8103  144D                     u2524:	
   8104  144D  3EFF               	addlw	-1
   8105  144E  1D03               	skipz
   8106  144F  2C4B               	goto	u2525
-  8107  1450  0870               	movf	??_LCD_Port,w
-  8108  1451  00F1               	movwf	??_LCD_Port+1
+  8107  1450  0870               	movf	??_LCD_Out,w
+  8108  1451  00F1               	movwf	??_LCD_Out+1
   8109  1452  084A               	movf	_lcd^(0+128),w
   8110  1453  0084               	movwf	4
   8111  1454  1783               	bsf	3,7
   8112  1455  1C4B               	btfss	(_lcd+1)^(0+128),0
   8113  1456  1383               	bcf	3,7
-  8114  1457  0871               	movf	??_LCD_Port+1,w
+  8114  1457  0871               	movf	??_LCD_Out+1,w
   8115  1458  0480               	iorwf	0,f
   8116                           
-  8117                           ;lcd.c: 20: }
+  8117                           ;lcd.c: 22: }
   8118  1459  2C71               	goto	l2170
   8119  145A                     l2168:	
   8120                           
-  8121                           ;lcd.c: 21: else {
-  8122                           ;lcd.c: 22: *(lcd.PORT) &= ~(1 << lcd.D4);
+  8121                           ;lcd.c: 23: else {
+  8122                           ;lcd.c: 24: *(lcd.PORT) &= ~(1 << lcd.D4);
   8123  145A  3001               	movlw	1
-  8124  145B  00F0               	movwf	??_LCD_Port
+  8124  145B  00F0               	movwf	??_LCD_Out
   8125  145C  1683               	bsf	3,5	;RP0=1, select bank1
   8126  145D  1303               	bcf	3,6	;RP1=0, select bank1
   8127  145E  084D               	movf	(_lcd^(0+128)+3),w
@@ -8159,215 +8159,215 @@ Microchip Technology Omniscient Code Generator (Lite mode) build 59893
   8130  1461  2C64               	goto	u2534
   8131  1462                     u2535:	
   8132  1462  1003               	clrc
-  8133  1463  0DF0               	rlf	??_LCD_Port,f
+  8133  1463  0DF0               	rlf	??_LCD_Out,f
   8134  1464                     u2534:	
   8135  1464  3EFF               	addlw	-1
   8136  1465  1D03               	skipz
   8137  1466  2C62               	goto	u2535
-  8138  1467  0870               	movf	??_LCD_Port,w
+  8138  1467  0870               	movf	??_LCD_Out,w
   8139  1468  3AFF               	xorlw	255
-  8140  1469  00F1               	movwf	??_LCD_Port+1
+  8140  1469  00F1               	movwf	??_LCD_Out+1
   8141  146A  084A               	movf	_lcd^(0+128),w
   8142  146B  0084               	movwf	4
   8143  146C  1783               	bsf	3,7
   8144  146D  1C4B               	btfss	(_lcd+1)^(0+128),0
   8145  146E  1383               	bcf	3,7
-  8146  146F  0871               	movf	??_LCD_Port+1,w
+  8146  146F  0871               	movf	??_LCD_Out+1,w
   8147  1470  0580               	andwf	0,f
   8148  1471                     l2170:	
   8149                           
-  8150                           ;lcd.c: 23: }
-  8151                           ;lcd.c: 25: if ( c & 2 ) {
-  8152  1471  1CF3               	btfss	LCD_Port@c,1
+  8150                           ;lcd.c: 25: }
+  8151                           ;lcd.c: 27: if ( c & 2 ) {
+  8152  1471  1CF3               	btfss	LCD_Out@c,1
   8153  1472  2C8B               	goto	l2174
   8154                           
-  8155                           ;lcd.c: 26: *(lcd.PORT) |= 1 << lcd.D5;
+  8155                           ;lcd.c: 28: *(lcd.PORT) |= 1 << lcd.D5;
   8156  1473  3001               	movlw	1
-  8157  1474  00F0               	movwf	??_LCD_Port
+  8157  1474  00F0               	movwf	??_LCD_Out
   8158  1475  0C4D               	rrf	(_lcd^(0+128)+3),w
-  8159  1476  00F1               	movwf	??_LCD_Port+1
-  8160  1477  0CF1               	rrf	??_LCD_Port+1,f
-  8161  1478  0C71               	rrf	??_LCD_Port+1,w
+  8159  1476  00F1               	movwf	??_LCD_Out+1
+  8160  1477  0CF1               	rrf	??_LCD_Out+1,f
+  8161  1478  0C71               	rrf	??_LCD_Out+1,w
   8162  1479  3907               	andlw	7
   8163  147A  3E01               	addlw	1
   8164  147B  2C7E               	goto	u2554
   8165  147C                     u2555:	
   8166  147C  1003               	clrc
-  8167  147D  0DF0               	rlf	??_LCD_Port,f
+  8167  147D  0DF0               	rlf	??_LCD_Out,f
   8168  147E                     u2554:	
   8169  147E  3EFF               	addlw	-1
   8170  147F  1D03               	skipz
   8171  1480  2C7C               	goto	u2555
-  8172  1481  0870               	movf	??_LCD_Port,w
-  8173  1482  00F2               	movwf	??_LCD_Port+2
+  8172  1481  0870               	movf	??_LCD_Out,w
+  8173  1482  00F2               	movwf	??_LCD_Out+2
   8174  1483  084A               	movf	_lcd^(0+128),w
   8175  1484  0084               	movwf	4
   8176  1485  1783               	bsf	3,7
   8177  1486  1C4B               	btfss	(_lcd+1)^(0+128),0
   8178  1487  1383               	bcf	3,7
-  8179  1488  0872               	movf	??_LCD_Port+2,w
+  8179  1488  0872               	movf	??_LCD_Out+2,w
   8180  1489  0480               	iorwf	0,f
   8181                           
-  8182                           ;lcd.c: 27: }
+  8182                           ;lcd.c: 29: }
   8183  148A  2CA3               	goto	l2176
   8184  148B                     l2174:	
   8185                           
-  8186                           ;lcd.c: 28: else {
-  8187                           ;lcd.c: 29: *(lcd.PORT) &= ~(1 << lcd.D5);
+  8186                           ;lcd.c: 30: else {
+  8187                           ;lcd.c: 31: *(lcd.PORT) &= ~(1 << lcd.D5);
   8188  148B  3001               	movlw	1
-  8189  148C  00F0               	movwf	??_LCD_Port
+  8189  148C  00F0               	movwf	??_LCD_Out
   8190  148D  0C4D               	rrf	(_lcd^(0+128)+3),w
-  8191  148E  00F1               	movwf	??_LCD_Port+1
-  8192  148F  0CF1               	rrf	??_LCD_Port+1,f
-  8193  1490  0C71               	rrf	??_LCD_Port+1,w
+  8191  148E  00F1               	movwf	??_LCD_Out+1
+  8192  148F  0CF1               	rrf	??_LCD_Out+1,f
+  8193  1490  0C71               	rrf	??_LCD_Out+1,w
   8194  1491  3907               	andlw	7
   8195  1492  3E01               	addlw	1
   8196  1493  2C96               	goto	u2564
   8197  1494                     u2565:	
   8198  1494  1003               	clrc
-  8199  1495  0DF0               	rlf	??_LCD_Port,f
+  8199  1495  0DF0               	rlf	??_LCD_Out,f
   8200  1496                     u2564:	
   8201  1496  3EFF               	addlw	-1
   8202  1497  1D03               	skipz
   8203  1498  2C94               	goto	u2565
-  8204  1499  0870               	movf	??_LCD_Port,w
+  8204  1499  0870               	movf	??_LCD_Out,w
   8205  149A  3AFF               	xorlw	255
-  8206  149B  00F2               	movwf	??_LCD_Port+2
+  8206  149B  00F2               	movwf	??_LCD_Out+2
   8207  149C  084A               	movf	_lcd^(0+128),w
   8208  149D  0084               	movwf	4
   8209  149E  1783               	bsf	3,7
   8210  149F  1C4B               	btfss	(_lcd+1)^(0+128),0
   8211  14A0  1383               	bcf	3,7
-  8212  14A1  0872               	movf	??_LCD_Port+2,w
+  8212  14A1  0872               	movf	??_LCD_Out+2,w
   8213  14A2  0580               	andwf	0,f
   8214  14A3                     l2176:	
   8215                           
-  8216                           ;lcd.c: 30: }
-  8217                           ;lcd.c: 32: if ( c & 4 ) {
-  8218  14A3  1D73               	btfss	LCD_Port@c,2
+  8216                           ;lcd.c: 32: }
+  8217                           ;lcd.c: 34: if ( c & 4 ) {
+  8218  14A3  1D73               	btfss	LCD_Out@c,2
   8219  14A4  2CBA               	goto	l2180
   8220                           
-  8221                           ;lcd.c: 33: *(lcd.PORT) |= 1 << lcd.D6;
+  8221                           ;lcd.c: 35: *(lcd.PORT) |= 1 << lcd.D6;
   8222  14A5  3001               	movlw	1
-  8223  14A6  00F0               	movwf	??_LCD_Port
+  8223  14A6  00F0               	movwf	??_LCD_Out
   8224  14A7  084E               	movf	(_lcd^(0+128)+4),w
   8225  14A8  3907               	andlw	7
   8226  14A9  3E01               	addlw	1
   8227  14AA  2CAD               	goto	u2584
   8228  14AB                     u2585:	
   8229  14AB  1003               	clrc
-  8230  14AC  0DF0               	rlf	??_LCD_Port,f
+  8230  14AC  0DF0               	rlf	??_LCD_Out,f
   8231  14AD                     u2584:	
   8232  14AD  3EFF               	addlw	-1
   8233  14AE  1D03               	skipz
   8234  14AF  2CAB               	goto	u2585
-  8235  14B0  0870               	movf	??_LCD_Port,w
-  8236  14B1  00F1               	movwf	??_LCD_Port+1
+  8235  14B0  0870               	movf	??_LCD_Out,w
+  8236  14B1  00F1               	movwf	??_LCD_Out+1
   8237  14B2  084A               	movf	_lcd^(0+128),w
   8238  14B3  0084               	movwf	4
   8239  14B4  1783               	bsf	3,7
   8240  14B5  1C4B               	btfss	(_lcd+1)^(0+128),0
   8241  14B6  1383               	bcf	3,7
-  8242  14B7  0871               	movf	??_LCD_Port+1,w
+  8242  14B7  0871               	movf	??_LCD_Out+1,w
   8243  14B8  0480               	iorwf	0,f
   8244                           
-  8245                           ;lcd.c: 34: }
+  8245                           ;lcd.c: 36: }
   8246  14B9  2CCF               	goto	l2182
   8247  14BA                     l2180:	
   8248                           
-  8249                           ;lcd.c: 35: else {
-  8250                           ;lcd.c: 36: *(lcd.PORT) &= ~(1 << lcd.D6);
+  8249                           ;lcd.c: 37: else {
+  8250                           ;lcd.c: 38: *(lcd.PORT) &= ~(1 << lcd.D6);
   8251  14BA  3001               	movlw	1
-  8252  14BB  00F0               	movwf	??_LCD_Port
+  8252  14BB  00F0               	movwf	??_LCD_Out
   8253  14BC  084E               	movf	(_lcd^(0+128)+4),w
   8254  14BD  3907               	andlw	7
   8255  14BE  3E01               	addlw	1
   8256  14BF  2CC2               	goto	u2594
   8257  14C0                     u2595:	
   8258  14C0  1003               	clrc
-  8259  14C1  0DF0               	rlf	??_LCD_Port,f
+  8259  14C1  0DF0               	rlf	??_LCD_Out,f
   8260  14C2                     u2594:	
   8261  14C2  3EFF               	addlw	-1
   8262  14C3  1D03               	skipz
   8263  14C4  2CC0               	goto	u2595
-  8264  14C5  0870               	movf	??_LCD_Port,w
+  8264  14C5  0870               	movf	??_LCD_Out,w
   8265  14C6  3AFF               	xorlw	255
-  8266  14C7  00F1               	movwf	??_LCD_Port+1
+  8266  14C7  00F1               	movwf	??_LCD_Out+1
   8267  14C8  084A               	movf	_lcd^(0+128),w
   8268  14C9  0084               	movwf	4
   8269  14CA  1783               	bsf	3,7
   8270  14CB  1C4B               	btfss	(_lcd+1)^(0+128),0
   8271  14CC  1383               	bcf	3,7
-  8272  14CD  0871               	movf	??_LCD_Port+1,w
+  8272  14CD  0871               	movf	??_LCD_Out+1,w
   8273  14CE  0580               	andwf	0,f
   8274  14CF                     l2182:	
   8275                           
-  8276                           ;lcd.c: 37: }
-  8277                           ;lcd.c: 39: if ( c & 8 ) {
-  8278  14CF  1DF3               	btfss	LCD_Port@c,3
+  8276                           ;lcd.c: 39: }
+  8277                           ;lcd.c: 41: if ( c & 8 ) {
+  8278  14CF  1DF3               	btfss	LCD_Out@c,3
   8279  14D0  2CE9               	goto	l2186
   8280                           
-  8281                           ;lcd.c: 40: *(lcd.PORT) |= 1 << lcd.D7;
+  8281                           ;lcd.c: 42: *(lcd.PORT) |= 1 << lcd.D7;
   8282  14D1  3001               	movlw	1
-  8283  14D2  00F0               	movwf	??_LCD_Port
+  8283  14D2  00F0               	movwf	??_LCD_Out
   8284  14D3  0C4E               	rrf	(_lcd^(0+128)+4),w
-  8285  14D4  00F1               	movwf	??_LCD_Port+1
-  8286  14D5  0CF1               	rrf	??_LCD_Port+1,f
-  8287  14D6  0C71               	rrf	??_LCD_Port+1,w
+  8285  14D4  00F1               	movwf	??_LCD_Out+1
+  8286  14D5  0CF1               	rrf	??_LCD_Out+1,f
+  8287  14D6  0C71               	rrf	??_LCD_Out+1,w
   8288  14D7  3907               	andlw	7
   8289  14D8  3E01               	addlw	1
   8290  14D9  2CDC               	goto	u2614
   8291  14DA                     u2615:	
   8292  14DA  1003               	clrc
-  8293  14DB  0DF0               	rlf	??_LCD_Port,f
+  8293  14DB  0DF0               	rlf	??_LCD_Out,f
   8294  14DC                     u2614:	
   8295  14DC  3EFF               	addlw	-1
   8296  14DD  1D03               	skipz
   8297  14DE  2CDA               	goto	u2615
-  8298  14DF  0870               	movf	??_LCD_Port,w
-  8299  14E0  00F2               	movwf	??_LCD_Port+2
+  8298  14DF  0870               	movf	??_LCD_Out,w
+  8299  14E0  00F2               	movwf	??_LCD_Out+2
   8300  14E1  084A               	movf	_lcd^(0+128),w
   8301  14E2  0084               	movwf	4
   8302  14E3  1783               	bsf	3,7
   8303  14E4  1C4B               	btfss	(_lcd+1)^(0+128),0
   8304  14E5  1383               	bcf	3,7
-  8305  14E6  0872               	movf	??_LCD_Port+2,w
+  8305  14E6  0872               	movf	??_LCD_Out+2,w
   8306  14E7  0480               	iorwf	0,f
   8307                           
-  8308                           ;lcd.c: 41: }
+  8308                           ;lcd.c: 43: }
   8309  14E8  0008               	return
   8310  14E9                     l2186:	
   8311                           
-  8312                           ;lcd.c: 42: else {
-  8313                           ;lcd.c: 43: *(lcd.PORT) &= ~(1 << lcd.D7);
+  8312                           ;lcd.c: 44: else {
+  8313                           ;lcd.c: 45: *(lcd.PORT) &= ~(1 << lcd.D7);
   8314  14E9  3001               	movlw	1
-  8315  14EA  00F0               	movwf	??_LCD_Port
+  8315  14EA  00F0               	movwf	??_LCD_Out
   8316  14EB  0C4E               	rrf	(_lcd^(0+128)+4),w
-  8317  14EC  00F1               	movwf	??_LCD_Port+1
-  8318  14ED  0CF1               	rrf	??_LCD_Port+1,f
-  8319  14EE  0C71               	rrf	??_LCD_Port+1,w
+  8317  14EC  00F1               	movwf	??_LCD_Out+1
+  8318  14ED  0CF1               	rrf	??_LCD_Out+1,f
+  8319  14EE  0C71               	rrf	??_LCD_Out+1,w
   8320  14EF  3907               	andlw	7
   8321  14F0  3E01               	addlw	1
   8322  14F1  2CF4               	goto	u2624
   8323  14F2                     u2625:	
   8324  14F2  1003               	clrc
-  8325  14F3  0DF0               	rlf	??_LCD_Port,f
+  8325  14F3  0DF0               	rlf	??_LCD_Out,f
   8326  14F4                     u2624:	
   8327  14F4  3EFF               	addlw	-1
   8328  14F5  1D03               	skipz
   8329  14F6  2CF2               	goto	u2625
-  8330  14F7  0870               	movf	??_LCD_Port,w
+  8330  14F7  0870               	movf	??_LCD_Out,w
   8331  14F8  3AFF               	xorlw	255
-  8332  14F9  00F2               	movwf	??_LCD_Port+2
+  8332  14F9  00F2               	movwf	??_LCD_Out+2
   8333  14FA  084A               	movf	_lcd^(0+128),w
   8334  14FB  0084               	movwf	4
   8335  14FC  1783               	bsf	3,7
   8336  14FD  1C4B               	btfss	(_lcd+1)^(0+128),0
   8337  14FE  1383               	bcf	3,7
-  8338  14FF  0872               	movf	??_LCD_Port+2,w
+  8338  14FF  0872               	movf	??_LCD_Out+2,w
   8339  1500  0580               	andwf	0,f
   8340  1501  0008               	return
-  8341  1502                     __end_of_LCD_Port:	
+  8341  1502                     __end_of_LCD_Out:	
   8342                           
   8343                           	psect	text26
   8344  1E45                     __ptext26:	
@@ -8958,9 +8958,9 @@ Critical Paths under _main in COMMON
     ___ftge->___bmul
     _LCD_puts->_LCD_putc
     _LCD_putrs->_LCD_putc
-    _LCD_putc->_LCD_Port
+    _LCD_putc->_LCD_Out
     _LCD_Init->_LCD_Write
-    _LCD_Write->_LCD_Port
+    _LCD_Write->_LCD_Out
     _ADC_Read->___lldiv
 
 Critical Paths under _main in BANK0
@@ -9128,7 +9128,7 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (2) _LCD_putc                                             4     4      0     132
                                               4 COMMON     4     4      0
-                           _LCD_Port
+                            _LCD_Out
  ---------------------------------------------------------------------------------
  (1) _LCD_Init                                             8     3      5     256
                                               8 COMMON     6     1      5
@@ -9137,9 +9137,9 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (1) _LCD_Write                                            4     4      0     110
                                               4 COMMON     4     4      0
-                           _LCD_Port
+                            _LCD_Out
  ---------------------------------------------------------------------------------
- (3) _LCD_Port                                             4     4      0      88
+ (3) _LCD_Out                                              4     4      0      88
                                               0 COMMON     4     4      0
  ---------------------------------------------------------------------------------
  (1) _IO_Init                                              0     0      0       0
@@ -9166,15 +9166,15 @@ Call Graph Tables:
    _IO_Init
    _LCD_Init
      _LCD_Write
-       _LCD_Port
+       _LCD_Out
    _LCD_Write
-     _LCD_Port
+     _LCD_Out
    _LCD_putrs
      _LCD_putc
-       _LCD_Port
+       _LCD_Out
    _LCD_puts
      _LCD_putc
-       _LCD_Port
+       _LCD_Out
    ___bmul
      ___awdiv (ARG)
        ___awmod (ARG)
@@ -9495,7 +9495,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.33 build 59893 
-Symbol Table                                                                                   Wed May 27 15:25:59 2015
+Symbol Table                                                                                   Thu Jun  4 14:18:53 2015
 
                       pc 0002           ___bmul@product 0025              __CFG_CP$OFF 0000  
                      l43 0D86                       l44 0D80                       l36 0D5F  
@@ -9510,107 +9510,107 @@ Symbol Table                                                                    
                     l696 17AB             __CFG_CPD$OFF 0000          LCD_Init@display 0078  
                     _lcd 00CA                      fsr0 0004                      indf 0000  
            ___awmod@sign 0076             __CFG_FOSC$HS 0000              _sprintf$463 00A9  
-            _sprintf$876 00A6             __CFG_LVP$OFF 0000                     l3000 050E  
-                   l3002 0527                     l2212 1125                     l3020 05B6  
-                   l3100 00E3                     l2142 1242                     l2230 1146  
-                   l3014 05A3                     l3102 07D9                     l3112 1E9F  
-                   l2152 126E                     l2144 124E                     l2304 1604  
-                   l2240 1167                     l3032 05F1                     l2170 1471  
-                   l2154 1278                     l2146 1253                     l2138 123B  
-                   l2322 1633                     l2218 1130                     l3026 05D2  
-                   l2180 14BA                     l2340 167F                     l2324 163F  
-                   l2316 161E                     l2244 116F                     l2236 115C  
-                   l2228 1138                     l2260 1F69                     l3052 070F  
-                   l3204 0E04                     l3140 0D66                     l3124 0D33  
-                   l2182 14CF                     l2174 148B                     l2334 165D  
-                   l2326 1644                     l2270 1F7D                     l2190 0808  
-                   l3062 073C                     l3046 06FE                     l3054 0714  
-                   l3214 0F50                     l3134 0D4E                     l2176 14A3  
-                   l2168 145A                     l2344 1691                     l2336 1669  
-                   l2328 1648                     l2600 17CC                     l2256 1F62  
-                   l2504 1E5F                     l3080 0787                     l3072 076C  
-                   l3224 0F69                     l3216 0F51                     l3152 0D8D  
-                   l2186 14E9                     l2354 16B4                     l2610 17F4  
-                   l2602 17DC                     l2514 151C                     l2282 1F9E  
-                   l2274 1F8B                     l2194 080E                     l2370 0037  
-                   l3066 0756                     l2612 17F7                     l2268 1F6F  
-                   l2364 0021                     l2452 0A2A                     l2444 09A0  
-                   l3084 07A6                     l3180 0DDD                     l2294 15EE  
-                   l2702 1399                     l2278 1F96                     l2382 0076  
-                   l3094 07C3                     l3086 07AA                     l3078 0783  
-                   l2712 1186                     l2632 11FD                     l2608 17E9  
-                   l2536 1575                     l2528 1555                     l3088 07AE  
-                   l2722 11BE                     l2714 1196                     l2298 15F5  
-                   l2618 10F8                     l2554 15AE                     l2546 1591  
-                   l2394 009E                     l2386 0086                     l2474 0B90  
-                   l3186 0DE5                     l2636 1224                     l2556 15B9  
-                   l2548 15A1                     l2492 0CDC                     l2468 0B22  
-                   l3268 0FC9                     l3196 0EDA                     l2726 11CB  
-                   l2830 1EBE                     l2742 1F42                     l2574 170E  
-                   l2558 15BC                     l2398 00AE                     l2486 0C6E  
-                   l2478 0BAF                     l2902 01E1                     l2736 1F14  
-                   l2584 1755                     l2568 16EF                     l2912 0226  
-                   l2770 083E                     l2738 1F24                     l2746 1F4F  
-                   l2754 1EE3                     l2668 132E                     l2756 1EF5  
-                   l2940 032E                     l2860 00FD                     l2774 0847  
-                   l2766 0834                     l2694 137D                     l2686 1360  
-                   l2848 12F8                     l2696 1388                     l2688 1370  
-                   l2952 03B2                     l2944 0374                     l2936 0307  
-                   l2928 0290                     l2698 138B                     l2866 0115  
-                   l2874 0159                     l2972 049A                     l2956 03D3  
-                   l2894 01BB                     l2886 0172                     l2968 041D  
-                   l2896 01D1                     l2888 01B3                     l2986 04DC  
-                   l2978 04A0                     l2998 0508                     STR_1 10D0  
-                   STR_2 107C                     STR_3 10E5                     STR_4 10EC  
-                   STR_5 10A6                     STR_6 1091                     STR_7 10BB  
-                   u3025 165E                     u3105 0043                     u3115 0055  
-                   u4005 0830                     u3205 00B7                     u4015 083A  
-                   u3224 1FB0                     u3304 1432                     u3225 1FAE  
-                   u4025 0844                     u3305 1430                     u2425 1247  
-                   u3145 0087                     u3234 1FD0                     u3235 1FCE  
-                   u4035 08A2                     u3155 008F                     u2524 144D  
-                   u3244 1FF2                     u2525 144B                     u3245 1FF0  
-                   u2445 1262                     u2614 14DC                     u2534 1464  
-                   u3254 13AD                     u2615 14DA                     u2535 1462  
-                   u3255 13AB                     u2624 14F4                     u2625 14F2  
-                   u3265 13BC                     u2465 1271                     u3425 1557  
-                   u2705 1147                     u4305 04A3                     u2554 147E  
-                   u3274 13D5                     u2555 147C                     u3275 13D3  
-                   u3515 15B0                     u3435 1568                     u2715 1153  
-                   u3195 00AF                     u4315 04D2                     u4235 0339  
-                   u2564 1496                     u3284 13F3                     u2565 1494  
-                   u3285 13F1                     u3701 11F0                     u3605 17CD  
-                   u3445 1576                     u2725 115D                     u2805 1F83  
-                   u4405 05CC                     u4245 037F                     u3294 1414  
-                   u3702 11F1                     u4095 12CB                     u3295 1412  
-                   u3703 11F6                     u2495 1289                     u2815 1F8C  
-                   u2584 14AD                     u3704 11F7                     u2585 14AB  
-                   u3721 1217                     u4425 0660                     u2594 14C2  
-                   u3722 1218                     u2595 14C0                     u3723 121D  
-                   u3635 17EB                     u3555 1757                     u4435 06C6  
-                   u4355 0517                     u4275 03B0                     u4195 023E  
-                   u3724 121E                     u3565 1786                     u3485 1592  
-                   u2685 113B                     u2935 161F                     u4535 0778  
-                   u4375 0549                     u3905 11BF                     u3825 137F  
-                   u3665 1101                     u2785 1F72                     u4545 0796  
-                   u3675 1108                     u4395 05BF                     u2965 1634  
-                   u3765 1335                     u4485 0733                     u3935 1F18  
-                   u4495 074D                     u4735 0E0B                     u4807 0D75  
-                   u3865 118A                     u4817 0DCC                     u4907 1E95  
-                   u2995 1649                     u3795 1361                     u3955 1F32  
-                   u4827 0F43                     u3885 1198                     u4837 13E3  
-                   u3965 1F43                     u3895 11AD                     u4847 1422  
-                   u4857 084D                     u3985 1EE8                     u4867 085E  
-                   u4877 086F                     u4797 0D42                     u4887 1FE0  
-                   u4897 12BE              main@current 01BD          __end_of_IO_Init 1E53  
-           __CFG_WRT$OFF 0000                     _main 0CFB             ___ftpack@arg 0070  
-           ___ftpack@exp 0073                     btemp 007E         __end_of_ADC_Init 1E9C  
-       __end_of_ADC_Read 1314            __CFG_BOREN$ON 0000                     ltemp 007E  
-                   start 0000                     ttemp 007E                     wtemp 007E  
-     __size_of_LCD_Write 005B              LCD_Init@cmd 007D        ___bmul@multiplier 0026  
-           ___ftmul@cntr 0043             ___ftmul@sign 0044       __size_of_LCD_putrs 0022  
-           ___fttol@exp1 005B             ___fttol@lval 0057         __end_of_LCD_Init 08C0  
-       __end_of_LCD_Port 1502         __end_of_LCD_putc 1440         __end_of_LCD_puts 1EBB  
+            _sprintf$876 00A6             __CFG_LVP$OFF 0000          __end_of_LCD_Out 1502  
+                   l3000 050E                     l3002 0527                     l2212 1125  
+                   l3020 05B6                     l3100 00E3                     l2142 1242  
+                   l2230 1146                     l3014 05A3                     l3102 07D9  
+                   l3112 1E9F                     l2152 126E                     l2144 124E  
+                   l2304 1604                     l2240 1167                     l3032 05F1  
+                   l2170 1471                     l2154 1278                     l2146 1253  
+                   l2138 123B                     l2322 1633                     l2218 1130  
+                   l3026 05D2                     l2180 14BA                     l2340 167F  
+                   l2324 163F                     l2316 161E                     l2244 116F  
+                   l2236 115C                     l2228 1138                     l2260 1F69  
+                   l3052 070F                     l3204 0E04                     l3140 0D66  
+                   l3124 0D33                     l2182 14CF                     l2174 148B  
+                   l2334 165D                     l2326 1644                     l2270 1F7D  
+                   l2190 0808                     l3062 073C                     l3046 06FE  
+                   l3054 0714                     l3214 0F50                     l3134 0D4E  
+                   l2176 14A3                     l2168 145A                     l2344 1691  
+                   l2336 1669                     l2328 1648                     l2600 17CC  
+                   l2256 1F62                     l2504 1E5F                     l3080 0787  
+                   l3072 076C                     l3224 0F69                     l3216 0F51  
+                   l3152 0D8D                     l2186 14E9                     l2354 16B4  
+                   l2610 17F4                     l2602 17DC                     l2514 151C  
+                   l2282 1F9E                     l2274 1F8B                     l2194 080E  
+                   l2370 0037                     l3066 0756                     l2612 17F7  
+                   l2268 1F6F                     l2364 0021                     l2452 0A2A  
+                   l2444 09A0                     l3084 07A6                     l3180 0DDD  
+                   l2294 15EE                     l2702 1399                     l2278 1F96  
+                   l2382 0076                     l3094 07C3                     l3086 07AA  
+                   l3078 0783                     l2712 1186                     l2632 11FD  
+                   l2608 17E9                     l2536 1575                     l2528 1555  
+                   l3088 07AE                     l2722 11BE                     l2714 1196  
+                   l2298 15F5                     l2618 10F8                     l2554 15AE  
+                   l2546 1591                     l2394 009E                     l2386 0086  
+                   l2474 0B90                     l3186 0DE5                     l2636 1224  
+                   l2556 15B9                     l2548 15A1                     l2492 0CDC  
+                   l2468 0B22                     l3268 0FC9                     l3196 0EDA  
+                   l2726 11CB                     l2830 1EBE                     l2742 1F42  
+                   l2574 170E                     l2558 15BC                     l2398 00AE  
+                   l2486 0C6E                     l2478 0BAF                     l2902 01E1  
+                   l2736 1F14                     l2584 1755                     l2568 16EF  
+                   l2912 0226                     l2770 083E                     l2738 1F24  
+                   l2746 1F4F                     l2754 1EE3                     l2668 132E  
+                   l2756 1EF5                     l2940 032E                     l2860 00FD  
+                   l2774 0847                     l2766 0834                     l2694 137D  
+                   l2686 1360                     l2848 12F8                     l2696 1388  
+                   l2688 1370                     l2952 03B2                     l2944 0374  
+                   l2936 0307                     l2928 0290                     l2698 138B  
+                   l2866 0115                     l2874 0159                     l2972 049A  
+                   l2956 03D3                     l2894 01BB                     l2886 0172  
+                   l2968 041D                     l2896 01D1                     l2888 01B3  
+                   l2986 04DC                     l2978 04A0                     l2998 0508  
+                   STR_1 10D0                     STR_2 107C                     STR_3 10E5  
+                   STR_4 10EC                     STR_5 10A6                     STR_6 1091  
+                   STR_7 10BB                     u3025 165E                     u3105 0043  
+                   u3115 0055                     u4005 0830                     u3205 00B7  
+                   u4015 083A                     u3224 1FB0                     u3304 1432  
+                   u3225 1FAE                     u4025 0844                     u3305 1430  
+                   u2425 1247                     u3145 0087                     u3234 1FD0  
+                   u3235 1FCE                     u4035 08A2                     u3155 008F  
+                   u2524 144D                     u3244 1FF2                     u2525 144B  
+                   u3245 1FF0                     u2445 1262                     u2614 14DC  
+                   u2534 1464                     u3254 13AD                     u2615 14DA  
+                   u2535 1462                     u3255 13AB                     u2624 14F4  
+                   u2625 14F2                     u3265 13BC                     u2465 1271  
+                   u3425 1557                     u2705 1147                     u4305 04A3  
+                   u2554 147E                     u3274 13D5                     u2555 147C  
+                   u3275 13D3                     u3515 15B0                     u3435 1568  
+                   u2715 1153                     u3195 00AF                     u4315 04D2  
+                   u4235 0339                     u2564 1496                     u3284 13F3  
+                   u2565 1494                     u3285 13F1                     u3701 11F0  
+                   u3605 17CD                     u3445 1576                     u2725 115D  
+                   u2805 1F83                     u4405 05CC                     u4245 037F  
+                   u3294 1414                     u3702 11F1                     u4095 12CB  
+                   u3295 1412                     u3703 11F6                     u2495 1289  
+                   u2815 1F8C                     u2584 14AD                     u3704 11F7  
+                   u2585 14AB                     u3721 1217                     u4425 0660  
+                   u2594 14C2                     u3722 1218                     u2595 14C0  
+                   u3723 121D                     u3635 17EB                     u3555 1757  
+                   u4435 06C6                     u4355 0517                     u4275 03B0  
+                   u4195 023E                     u3724 121E                     u3565 1786  
+                   u3485 1592                     u2685 113B                     u2935 161F  
+                   u4535 0778                     u4375 0549                     u3905 11BF  
+                   u3825 137F                     u3665 1101                     u2785 1F72  
+                   u4545 0796                     u3675 1108                     u4395 05BF  
+                   u2965 1634                     u3765 1335                     u4485 0733  
+                   u3935 1F18                     u4495 074D                     u4735 0E0B  
+                   u4807 0D75                     u3865 118A                     u4817 0DCC  
+                   u4907 1E95                     u2995 1649                     u3795 1361  
+                   u3955 1F32                     u4827 0F43                     u3885 1198  
+                   u4837 13E3                     u3965 1F43                     u3895 11AD  
+                   u4847 1422                     u4857 084D                     u3985 1EE8  
+                   u4867 085E                     u4877 086F                     u4797 0D42  
+                   u4887 1FE0                     u4897 12BE              main@current 01BD  
+        __end_of_IO_Init 1E53             __CFG_WRT$OFF 0000                     _main 0CFB  
+           ___ftpack@arg 0070             ___ftpack@exp 0073                     btemp 007E  
+       __end_of_ADC_Init 1E9C         __end_of_ADC_Read 1314            __CFG_BOREN$ON 0000  
+                   ltemp 007E                     start 0000                     ttemp 007E  
+                   wtemp 007E       __size_of_LCD_Write 005B              LCD_Init@cmd 007D  
+      ___bmul@multiplier 0026             ___ftmul@cntr 0043             ___ftmul@sign 0044  
+     __size_of_LCD_putrs 0022             ___fttol@exp1 005B             ___fttol@lval 0057  
+       __end_of_LCD_Init 08C0         __end_of_LCD_putc 1440         __end_of_LCD_puts 1EBB  
                   ?_main 0070          __end_of___awdiv 1176          __end_of___ftadd 16CE  
           __CFG_WDTE$OFF 0000          __end_of___awmod 1FA5          __end_of___ftneg 1E45  
         __end_of___lldiv 11D4          __end_of___ftmul 00DC          ___awdiv@divisor 0077  
@@ -9627,63 +9627,63 @@ Symbol Table                                                                    
                   wtemp3 0084                    wtemp4 0086                    wtemp5 0088  
                   wtemp6 007F          __end_of_sprintf 07DE          __initialization 07DE  
            __end_of_main 1000                   ??_main 006C            ___fttol@sign1 0056  
-   __size_of__tdiv_to_l_ 00C3        __end_of_LCD_Write 2000                ??_IO_Init 0070  
-      __end_of_LCD_putrs 1EDD         ___llmod@dividend 0074                   ?_scale 0045  
-                 _ADRESH 001E                   _ADRESL 009E         ___awdiv@dividend 0079  
-              ADC_Read@i 002C         __end_of___ftpack 129B         __end_of___lltoft 1F0C  
-         __CFG_PWRTE$OFF 0000         __end_of__powers_ 107C                   ___bmul 0804  
-                 ___ftge 11D4                   ___wmul 10F6                ??___awdiv 007B  
-              ??___ftadd 005B                ??___awmod 0074                ??___ftneg 0073  
-              ??___lldiv 0078                ??___ftmul 003B                ??___llmod 0078  
-              ??___ftsub 007E                ??___fttol 0052          ADC_Read@channel 002E  
-          main@screen_id 01DA                   _fround 08C0         ___awdiv@quotient 0022  
-        ___awmod@divisor 0070          ___awmod@counter 0075    ___ftmul@f3_as_product 0040  
-              ??_isdigit 0070          ADC_Read@samples 0020                ?_ADC_Init 0070  
-              ?_ADC_Read 0020                ??_sprintf 00A0    main@toggled_backlight 01D2  
-__end_of__initialization 07FC                ?_LCD_Init 0078                ?_LCD_Port 0070  
+              ??_LCD_Out 0070     __size_of__tdiv_to_l_ 00C3        __end_of_LCD_Write 2000  
+              ??_IO_Init 0070        __end_of_LCD_putrs 1EDD         ___llmod@dividend 0074  
+                 ?_scale 0045                   _ADRESH 001E                   _ADRESL 009E  
+       ___awdiv@dividend 0079                ADC_Read@i 002C         __end_of___ftpack 129B  
+       __end_of___lltoft 1F0C           __CFG_PWRTE$OFF 0000         __end_of__powers_ 107C  
+                 ___bmul 0804                   ___ftge 11D4                   ___wmul 10F6  
+              ??___awdiv 007B                ??___ftadd 005B                ??___awmod 0074  
+              ??___ftneg 0073                ??___lldiv 0078                ??___ftmul 003B  
+              ??___llmod 0078                ??___ftsub 007E                ??___fttol 0052  
+        ADC_Read@channel 002E            main@screen_id 01DA                   _fround 08C0  
+       ___awdiv@quotient 0022          ___awmod@divisor 0070          ___awmod@counter 0075  
+  ___ftmul@f3_as_product 0040                ??_isdigit 0070          ADC_Read@samples 0020  
+              ?_ADC_Init 0070                ?_ADC_Read 0020                ??_sprintf 00A0  
+  main@toggled_backlight 01D2  __end_of__initialization 07FC                ?_LCD_Init 0078  
              ___ftadd@f1 0055               ___ftadd@f2 0058               ___ftge@ff1 0027  
              ___ftge@ff2 002A                ?_LCD_putc 0070                ?_LCD_puts 0070  
              ___ftneg@f1 0070      ___bmul@multiplicand 0024               ___ftmul@f1 0035  
              ___ftmul@f2 0038               ___ftsub@f1 0065               ___ftsub@f2 0062  
-             ___fttol@f1 004E           __pcstackCOMMON 0070                LCD_Port@c 0073  
-           __pidataBANK3 0004               ___lltoft@c 002F            __end_of_scale 0CFB  
-              LCD_putc@c 0077                LCD_puts@a 007B                LCD_puts@i 0079  
-             __div_to_l_ 16CE           _OPTION_REGbits 0081               ??_ADC_Init 0070  
-             ??_ADC_Read 0024          __div_to_l_@exp1 0025          __div_to_l_@cntr 0024  
-           sprintf@integ 00B6                  ??_scale 0048          __div_to_l_@quot 0020  
-           sprintf@width 00BF               ??_LCD_Init 0020               ??_LCD_Port 0070  
-             ??_LCD_putc 0074               ??_LCD_puts 0078            __div_to_l_@f1 0070  
-          __div_to_l_@f2 0073               __pmaintext 0CFB                  ?___bmul 0024  
-                ?___ftge 0027                  ?___wmul 0070                  ?_fround 0045  
-              ?___ftpack 0070                ?___lltoft 002F                  _IO_Init 1E45  
-             __stringtab 1000        __end_of__npowers_ 1055          __size_of___bmul 0013  
-        __size_of___ftge 005F                  ___awdiv 1119                  ___ftadd 15C5  
-                ___awmod 1F58                  ___ftneg 1E3D                  ___lldiv 1176  
-        __size_of___wmul 0023                  ___ftmul 0009                  ___llmod 1F0C  
-                ___ftsub 1E61                  ___fttol 1314               _fround$873 0051  
-             _fround$874 004E               ??___ftpack 0075          __size_of_fround 019C  
-     main@toggled_screen 01D1               ??___lltoft 0033                  __ptext1 00DC  
-                __ptext2 0A5C                  __ptext3 1E53                  __ptext4 08C0  
-                __ptext5 0009                  __ptext6 0804                  __ptext7 1F58  
-                __ptext8 1119                  __ptext9 1502              ?__div_to_l_ 0070  
-                _dpowers 1006                  _isdigit 1E53         ___awmod@dividend 0072  
-                main@lcd 01CC                  _sprintf 00DC                _LCD_Write 1FA5  
-   end_of_initialization 07FC                _LCD_putrs 1EBB          ___lldiv@divisor 0070  
-        ___lldiv@counter 007D           __tdiv_to_l_@f1 0070           __tdiv_to_l_@f2 0073  
-          ??__tdiv_to_l_ 0076                _PORTBbits 0006                _PORTCbits 0007  
-              _TRISBbits 0086                _TRISCbits 0087        __size_of_ADC_Init 001F  
-      __size_of_ADC_Read 0079               ?_LCD_Write 0070               ?_LCD_putrs 0070  
-      __size_of_LCD_Init 00A9      __size_of__div_to_l_ 0132        __size_of_LCD_Port 00C2  
-      __size_of_LCD_putc 009E              ___ftmul@exp 003F        __size_of_LCD_puts 001F  
-         __end_of___bmul 0817           __end_of___ftge 1233           __end_of___wmul 1119  
-             LCD_Write@c 0077           __end_of_fround 0A5C      start_initialization 07DE  
-    __end_of__tdiv_to_l_ 15C5        ADC_Read@ADCResult 0028               LCD_putrs@a 007A  
-             LCD_putrs@i 0078          ___llmod@divisor 0070          ___llmod@counter 0079  
-               ??___bmul 007C                 ??___ftge 002D                 ??___wmul 0074  
-          sprintf@vd_465 00B2              __pdataBANK3 01DD                 ??_fround 0048  
-             fround@prec 0054        __size_of___ftpack 0068        __size_of___lltoft 002F  
-              ___latbits 0002            __pcstackBANK0 0020            __pcstackBANK1 00A0  
-          __pcstackBANK3 0190      __end_of__stringdata 10F3                 ?_IO_Init 0070  
+             ___fttol@f1 004E           __pcstackCOMMON 0070             __pidataBANK3 0004  
+             ___lltoft@c 002F            __end_of_scale 0CFB                LCD_putc@c 0077  
+              LCD_puts@a 007B                LCD_puts@i 0079               __div_to_l_ 16CE  
+         _OPTION_REGbits 0081               ??_ADC_Init 0070               ??_ADC_Read 0024  
+        __div_to_l_@exp1 0025          __div_to_l_@cntr 0024             sprintf@integ 00B6  
+                ??_scale 0048          __div_to_l_@quot 0020             sprintf@width 00BF  
+             ??_LCD_Init 0020               ??_LCD_putc 0074               ??_LCD_puts 0078  
+          __div_to_l_@f1 0070            __div_to_l_@f2 0073               __pmaintext 0CFB  
+                ?___bmul 0024                  ?___ftge 0027                  ?___wmul 0070  
+                ?_fround 0045                ?___ftpack 0070                ?___lltoft 002F  
+                _LCD_Out 1440                  _IO_Init 1E45               __stringtab 1000  
+      __end_of__npowers_ 1055          __size_of___bmul 0013          __size_of___ftge 005F  
+                ___awdiv 1119                  ___ftadd 15C5                  ___awmod 1F58  
+                ___ftneg 1E3D                  ___lldiv 1176          __size_of___wmul 0023  
+                ___ftmul 0009                  ___llmod 1F0C                  ___ftsub 1E61  
+                ___fttol 1314               _fround$873 0051               _fround$874 004E  
+             ??___ftpack 0075          __size_of_fround 019C       main@toggled_screen 01D1  
+             ??___lltoft 0033                  __ptext1 00DC                  __ptext2 0A5C  
+                __ptext3 1E53                  __ptext4 08C0                  __ptext5 0009  
+                __ptext6 0804                  __ptext7 1F58                  __ptext8 1119  
+                __ptext9 1502              ?__div_to_l_ 0070                  _dpowers 1006  
+                _isdigit 1E53         ___awmod@dividend 0072                  main@lcd 01CC  
+                _sprintf 00DC                _LCD_Write 1FA5     end_of_initialization 07FC  
+              _LCD_putrs 1EBB          ___lldiv@divisor 0070          ___lldiv@counter 007D  
+         __tdiv_to_l_@f1 0070           __tdiv_to_l_@f2 0073            ??__tdiv_to_l_ 0076  
+              _PORTBbits 0006                _PORTCbits 0007                _TRISBbits 0086  
+              _TRISCbits 0087        __size_of_ADC_Init 001F        __size_of_ADC_Read 0079  
+             ?_LCD_Write 0070               ?_LCD_putrs 0070        __size_of_LCD_Init 00A9  
+    __size_of__div_to_l_ 0132        __size_of_LCD_putc 009E              ___ftmul@exp 003F  
+      __size_of_LCD_puts 001F           __end_of___bmul 0817           __end_of___ftge 1233  
+         __end_of___wmul 1119               LCD_Write@c 0077           __end_of_fround 0A5C  
+    start_initialization 07DE      __end_of__tdiv_to_l_ 15C5        ADC_Read@ADCResult 0028  
+             LCD_putrs@a 007A               LCD_putrs@i 0078          ___llmod@divisor 0070  
+        ___llmod@counter 0079                 ??___bmul 007C                 ??___ftge 002D  
+               ??___wmul 0074            sprintf@vd_465 00B2              __pdataBANK3 01DD  
+               ??_fround 0048               fround@prec 0054        __size_of___ftpack 0068  
+               ?_LCD_Out 0070        __size_of___lltoft 002F                ___latbits 0002  
+          __pcstackBANK0 0020            __pcstackBANK1 00A0            __pcstackBANK3 0190  
+               LCD_Out@c 0073      __end_of__stringdata 10F3                 ?_IO_Init 0070  
             ??_LCD_Write 0074              ??_LCD_putrs 0078              sprintf@_val 00B9  
             sprintf@flag 00BD              sprintf@fval 00C3              sprintf@prec 00C7  
               __pnvBANK1 00CA                 ?___awdiv 0077                 ?___ftadd 0055  
@@ -9693,11 +9693,11 @@ __end_of__initialization 07FC                ?_LCD_Init 0078                ?_LC
             __tdiv_to_l_ 1502             ??__div_to_l_ 0076                 ?_isdigit 0070  
                _ADC_Init 1E7D                 _ADC_Read 129B                _scale$875 004A  
                ?_sprintf 0068           __size_of_scale 029F        main@toggled_power 01D3  
-               _LCD_Init 0817           ___wmul@product 0074                 _LCD_Port 1440  
-               _LCD_putc 13A2                 _LCD_puts 1E9C       __end_of__div_to_l_ 1800  
-              main@F1209 01DD               _ADCON0bits 001F              __stringbase 1005  
-             _ADCON1bits 009F              __stringdata 107C        ___wmul@multiplier 0070  
-        main@current_str 0190         __size_of_IO_Init 000E         __size_of___awdiv 005D  
+               _LCD_Init 0817           ___wmul@product 0074                 _LCD_putc 13A2  
+               _LCD_puts 1E9C       __end_of__div_to_l_ 1800                main@F1209 01DD  
+             _ADCON0bits 001F              __stringbase 1005               _ADCON1bits 009F  
+            __stringdata 107C        ___wmul@multiplier 0070          main@current_str 0190  
+       __size_of_LCD_Out 00C2         __size_of_IO_Init 000E         __size_of___awdiv 005D  
        __size_of___ftadd 0109         __size_of___awmod 004D         __size_of___ftneg 0008  
        __size_of___lldiv 005E         __size_of___ftmul 00D3         __size_of___llmod 004C  
        __size_of___ftsub 001C         __size_of___fttol 008E                 ___ftpack 1233  

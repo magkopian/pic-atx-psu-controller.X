@@ -1,6 +1,6 @@
 /* 
  * File:   main.c
- * Author: manolis
+ * Author: Manolis Agkopian
  *
  * Created on April 29, 2015, 3:40 AM
  */

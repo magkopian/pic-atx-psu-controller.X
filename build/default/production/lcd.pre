@@ -1295,7 +1295,7 @@ extern void memcpyee(__eeprom unsigned char *to, const unsigned char *from, unsi
 #pragma intrinsic(_delay)
 extern __nonreentrant void _delay(unsigned long);
 
-# 15 "lcd.h"
+# 17 "lcd.h"
 typedef struct {
 volatile unsigned char* PORT;
 unsigned RS :3;
@@ -1308,18 +1308,28 @@ unsigned D7 :3;
 
 extern LCD lcd;
 
-# 77
-void LCD_Write ( unsigned char c );
-void LCD_Port ( char a );
+# 83
 bool LCD_Init ( LCD display );
+
+
 void LCD_putc ( char a );
+
+
 void LCD_puts ( char *a );
+
+
 void LCD_putrs ( const char *a );
 
-# 14 "lcd.c"
+
+void LCD_Write ( unsigned char c );
+
+
+void LCD_Out ( char a );
+
+# 16 "lcd.c"
 LCD lcd;
 
-void LCD_Port ( char c ) {
+void LCD_Out ( char c ) {
 
 if ( c & 1 ){
 *(lcd.PORT) |= 1 << lcd.D4;
@@ -1354,7 +1364,7 @@ else {
 void LCD_Write ( unsigned char c ) {
 
 *(lcd.PORT) &= ~(1 << lcd.RS);
-LCD_Port(c);
+LCD_Out(c);
 
 *(lcd.PORT) |= 1 << lcd.EN;
 _delay((unsigned long)((4)*(8000000/4000.0)));
@@ -1366,7 +1376,7 @@ bool LCD_Init ( LCD display ) {
 
 lcd = display;
 
-# 67
+# 69
 if ( lcd.PORT == &PORTA ) {
 TRISA = 0x00;
 }
@@ -1377,7 +1387,7 @@ else if ( lcd.PORT == &PORTC ) {
 TRISC = 0x00;
 }
 
-# 84
+# 86
 else {
 return 0;
 }
@@ -1411,13 +1421,13 @@ return 1;
 void LCD_putc ( char c ) {
 
 *(lcd.PORT) |= 1 << lcd.RS;
-LCD_Port((c & 0xF0) >> 4);
+LCD_Out((c & 0xF0) >> 4);
 
 *(lcd.PORT) |= 1 << lcd.EN;
 _delay((unsigned long)((40)*(8000000/4000000.0)));
 *(lcd.PORT) &= ~(1 << lcd.EN);
 
-LCD_Port(c & 0x0F);
+LCD_Out(c & 0x0F);
 
 *(lcd.PORT) |= 1 << lcd.EN;
 _delay((unsigned long)((40)*(8000000/4000000.0)));

@@ -1,8 +1,10 @@
 /*
  * File:   lcd.c
- * Author: manolis
+ * Author: Manolis Agkopian
  *
  * Created on April 29, 2015, 5:10 PM
+ *
+ * LCD library source file.
  */
 
 #define _XTAL_FREQ 8000000
@@ -13,7 +15,7 @@
 
 LCD lcd;
 
-void LCD_Port ( char c ) {
+void LCD_Out ( char c ) {
     
     if ( c & 1 ){
         *(lcd.PORT) |= 1 << lcd.D4;
@@ -48,7 +50,7 @@ void LCD_Port ( char c ) {
 void LCD_Write ( unsigned char c ) {
 
     *(lcd.PORT) &= ~(1 << lcd.RS); // => RS = 0
-    LCD_Port(c);
+    LCD_Out(c);
 
     *(lcd.PORT) |= 1 << lcd.EN;    // => E = 1
     __delay_ms(4);
@@ -114,13 +116,13 @@ bool LCD_Init ( LCD display ) {
 void LCD_putc ( char c ) {
 
    *(lcd.PORT) |= 1 << lcd.RS;   // => RS = 1
-    LCD_Port((c & 0xF0) >> 4);   //Data transfer
+    LCD_Out((c & 0xF0) >> 4);   //Data transfer
 
     *(lcd.PORT) |= 1 << lcd.EN;
     __delay_us(40);
     *(lcd.PORT) &= ~(1 << lcd.EN);
 
-    LCD_Port(c & 0x0F);
+    LCD_Out(c & 0x0F);
 
     *(lcd.PORT) |= 1 << lcd.EN;
     __delay_us(40);

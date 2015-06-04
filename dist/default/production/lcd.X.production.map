@@ -5,7 +5,7 @@ Linker command line:
 --edf=/opt/microchip/xc8/v1.33/dat/en_msgs.txt -cs \
   -h+dist/default/production/lcd.X.production.sym \
   --cmf=dist/default/production/lcd.X.production.cmf -z -Q16F876A \
-  -o/tmp/cgt1py6tq -Mdist/default/production/lcd.X.production.map -E1 \
+  -o/tmp/cgtsQlEtf -Mdist/default/production/lcd.X.production.map -E1 \
   -ver=XC8 -ASTACK=0110h-016fh -pstack=STACK -ACONST=00h-0FFhx32 \
   -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -AENTRY=00h-0FFhx32 \
   -ASTRING=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -17,7 +17,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k /tmp/cgtxjLIpR.obj \
+  -DENTRY=2 -k /tmp/cgts64ADj.obj \
   dist/default/production/lcd.X.production.obj 
 
 Object code version is 3.11
@@ -27,7 +27,7 @@ Machine type is 16F876A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/cgtxjLIpR.obj
+/tmp/cgts64ADj.obj
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production/lcd.X.production.obj
@@ -264,7 +264,7 @@ ADC_Read@i               cstackBANK0  002C
 ADC_Read@samples         cstackBANK0  0020
 LCD_Init@cmd             cstackCOMMON 007D
 LCD_Init@display         cstackCOMMON 0078
-LCD_Port@c               cstackCOMMON 0073
+LCD_Out@c                cstackCOMMON 0073
 LCD_Write@c              cstackCOMMON 0077
 LCD_putc@c               cstackCOMMON 0077
 LCD_putrs@a              cstackCOMMON 007A
@@ -279,7 +279,7 @@ _ADRESH                  (abs)        001E
 _ADRESL                  (abs)        009E
 _IO_Init                 text26       1E45
 _LCD_Init                text23       0817
-_LCD_Port                text25       1440
+_LCD_Out                 text25       1440
 _LCD_Write               text24       1FA5
 _LCD_putc                text22       13A2
 _LCD_putrs               text21       1EBB
@@ -457,7 +457,7 @@ __end_of_ADC_Init        text29       1E9C
 __end_of_ADC_Read        text27       1314
 __end_of_IO_Init         text26       1E53
 __end_of_LCD_Init        text23       08C0
-__end_of_LCD_Port        text25       1502
+__end_of_LCD_Out         text25       1502
 __end_of_LCD_Write       text24       2000
 __end_of_LCD_putc        text22       1440
 __end_of_LCD_putrs       text21       1EDD
@@ -534,7 +534,7 @@ __size_of_ADC_Init       (abs)        0000
 __size_of_ADC_Read       (abs)        0000
 __size_of_IO_Init        (abs)        0000
 __size_of_LCD_Init       (abs)        0000
-__size_of_LCD_Port       (abs)        0000
+__size_of_LCD_Out        (abs)        0000
 __size_of_LCD_Write      (abs)        0000
 __size_of_LCD_putc       (abs)        0000
 __size_of_LCD_putrs      (abs)        0000
@@ -1338,7 +1338,7 @@ Total ram usage:       12 bytes
 
  *************** function _LCD_puts *****************
  Defined at:
-		line 131 in file "lcd.c"
+		line 133 in file "lcd.c"
  Parameters:    Size  Location     Type
   a               1    wreg     PTR unsigned char 
 		 -> main@current_str(45), 
@@ -1371,7 +1371,7 @@ Total ram usage:        4 bytes
 
  *************** function _LCD_putrs *****************
  Defined at:
-		line 139 in file "lcd.c"
+		line 141 in file "lcd.c"
  Parameters:    Size  Location     Type
   a               1    wreg     PTR const unsigned char 
 		 -> STR_7(21), STR_6(21), STR_5(21), STR_2(21), 
@@ -1406,7 +1406,7 @@ Total ram usage:        3 bytes
 
  *************** function _LCD_putc *****************
  Defined at:
-		line 114 in file "lcd.c"
+		line 116 in file "lcd.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1428,7 +1428,7 @@ Total ram usage:        4 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    1
  This function calls:
-		_LCD_Port
+		_LCD_Out
  This function is called by:
 		_LCD_puts
 		_LCD_putrs
@@ -1437,7 +1437,7 @@ Total ram usage:        4 bytes
 
  *************** function _LCD_Init *****************
  Defined at:
-		line 59 in file "lcd.c"
+		line 61 in file "lcd.c"
  Parameters:    Size  Location     Type
   display         5    8[COMMON] struct .
  Auto vars:     Size  Location     Type
@@ -1467,7 +1467,7 @@ Total ram usage:        8 bytes
 
  *************** function _LCD_Write *****************
  Defined at:
-		line 48 in file "lcd.c"
+		line 50 in file "lcd.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1489,16 +1489,16 @@ Total ram usage:        4 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    1
  This function calls:
-		_LCD_Port
+		_LCD_Out
  This function is called by:
 		_main
 		_LCD_Init
  This function uses a non-reentrant model
 
 
- *************** function _LCD_Port *****************
+ *************** function _LCD_Out *****************
  Defined at:
-		line 16 in file "lcd.c"
+		line 18 in file "lcd.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1748,10 +1748,10 @@ shared estimated size: 273
 
 lcd.c
 		_LCD_Init      		CODE           	0817	0000	169
+		_LCD_Out       		CODE           	1440	0000	194
 		_LCD_putc      		CODE           	13A2	0000	158
 		_LCD_puts      		CODE           	1E9C	0000	31
 		_LCD_putrs     		CODE           	1EBB	0000	34
-		_LCD_Port      		CODE           	1440	0000	194
 		_LCD_Write     		CODE           	1FA5	0000	91
 
 lcd.c estimated size: 677

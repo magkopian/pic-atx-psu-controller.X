@@ -1,11 +1,11 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"15 lcd.h
+"17 lcd.h
 [s S93 `*Vuc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 :3 `uc 1 ]
 [n S93 . PORT RS EN D4 D5 D6 D7 ]
 "268 /opt/microchip/xc8/v1.33/include/pic16f876a.h
 [v _PORTC `Vuc ~T0 @X0 0 e@7 ]
-"79 lcd.h
+"83 lcd.h
 [v _LCD_Init `(uc ~T0 @X0 0 ef1`S93 ]
 "15 adc.h
 [v _ADC_Init `(v ~T0 @X0 0 ef ]
@@ -23,7 +23,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "154 /opt/microchip/xc8/v1.33/include/pic.h
 [v __delay `JF1167 ~T0 @X0 0 e ]
 [p i __delay ]
-"77 lcd.h
+"95 lcd.h
 [v _LCD_Write `(v ~T0 @X0 0 ef1`uc ]
 "274 /opt/microchip/xc8/v1.33/include/pic16f876a.h
 [s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -33,13 +33,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S15 . . ]
 "285
 [v _PORTCbits `VS15 ~T0 @X0 0 e@7 ]
-"82 lcd.h
+"92 lcd.h
 [v _LCD_putrs `(v ~T0 @X0 0 ef1`*Cuc ]
 "16 adc.h
 [v _ADC_Read `(ul ~T0 @X0 0 ef2`uc`ui ]
 "205 /opt/microchip/xc8/v1.33/include/stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"81 lcd.h
+"89 lcd.h
 [v _LCD_puts `(v ~T0 @X0 0 ef1`*uc ]
 "1125 /opt/microchip/xc8/v1.33/include/pic16f876a.h
 [s S53 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1073,38 +1073,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eeprom_routines.h: 43: extern void eecpymem(volatile unsigned char *to, __eeprom unsigned char *from, unsigned char size);
 [; ;eeprom_routines.h: 44: extern void memcpyee(__eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 [; ;pic.h: 154: extern __nonreentrant void _delay(unsigned long);
-"16 config_bits.h
+"18 config_bits.h
 [p x FOSC=HS ]
-"17
-[p x WDTE=OFF ]
-"18
-[p x PWRTE=OFF ]
 "19
-[p x BOREN=ON ]
+[p x WDTE=OFF ]
 "20
-[p x LVP=OFF ]
+[p x PWRTE=OFF ]
 "21
-[p x CPD=OFF ]
+[p x BOREN=ON ]
 "22
-[p x WRT=OFF ]
+[p x LVP=OFF ]
 "23
+[p x CPD=OFF ]
+"24
+[p x WRT=OFF ]
+"25
 [p x CP=OFF ]
-[; ;lcd.h: 15: typedef struct {
-[; ;lcd.h: 16: volatile unsigned char* PORT;
-[; ;lcd.h: 17: unsigned RS :3;
-[; ;lcd.h: 18: unsigned EN :3;
-[; ;lcd.h: 19: unsigned D4 :3;
-[; ;lcd.h: 20: unsigned D5 :3;
-[; ;lcd.h: 21: unsigned D6 :3;
-[; ;lcd.h: 22: unsigned D7 :3;
-[; ;lcd.h: 23: } LCD;
-[; ;lcd.h: 25: extern LCD lcd;
-[; ;lcd.h: 77: void LCD_Write ( unsigned char c );
-[; ;lcd.h: 78: void LCD_Port ( char a );
-[; ;lcd.h: 79: bool LCD_Init ( LCD display );
-[; ;lcd.h: 80: void LCD_putc ( char a );
-[; ;lcd.h: 81: void LCD_puts ( char *a );
-[; ;lcd.h: 82: void LCD_putrs ( const char *a );
+[; ;lcd.h: 17: typedef struct {
+[; ;lcd.h: 18: volatile unsigned char* PORT;
+[; ;lcd.h: 19: unsigned RS :3;
+[; ;lcd.h: 20: unsigned EN :3;
+[; ;lcd.h: 21: unsigned D4 :3;
+[; ;lcd.h: 22: unsigned D5 :3;
+[; ;lcd.h: 23: unsigned D6 :3;
+[; ;lcd.h: 24: unsigned D7 :3;
+[; ;lcd.h: 25: } LCD;
+[; ;lcd.h: 27: extern LCD lcd;
+[; ;lcd.h: 83: bool LCD_Init ( LCD display );
+[; ;lcd.h: 86: void LCD_putc ( char a );
+[; ;lcd.h: 89: void LCD_puts ( char *a );
+[; ;lcd.h: 92: void LCD_putrs ( const char *a );
+[; ;lcd.h: 95: void LCD_Write ( unsigned char c );
+[; ;lcd.h: 98: void LCD_Out ( char a );
 [; ;adc.h: 15: void ADC_Init ( void );
 [; ;adc.h: 16: unsigned long ADC_Read ( unsigned char channel, unsigned int samples );
 [; ;main.c: 67: void IO_Init ( void );

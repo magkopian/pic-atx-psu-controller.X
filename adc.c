@@ -1,6 +1,6 @@
 /*
  * File:   adc.c
- * Author: manolis
+ * Author: Manolis Agkopian
  *
  * Created on May 1, 2015, 10:01 PM
  */
