@@ -72,7 +72,10 @@ int main ( void ) {
     char current_str[5][9];
     unsigned char screen_id = 0, start_channel = 0, stop_channel = 0;
     LCD lcd = { &PORTC, 2, 3, 4, 5, 6, 7 }; // PORT, RS, EN, D4, D5, D6, D7
-
+    double current_mult[5] = { 0.0840, 0.0350, 0.0840, 0.0550, 0.0350 }; //0.0367
+    double current_sub[5] = { 43.176, 17.955, 43.176, 28.215, 17.955 }; //18.644
+    
+    
     LCD_Init(lcd);
     ADC_Init();
     IO_Init();
@@ -141,7 +144,7 @@ int main ( void ) {
         }
 
         for ( int i = start_channel; i <= stop_channel; ++i ) {
-            current[i] = ( 0.0367 * ADC_Read(i, 1000) - 18.644);
+            current[i] = ( current_mult[i] * ADC_Read(i, 1000) - current_sub[i] );
 
             if ( current[i] >= 0 ) {
                 current_str[i][0] = ' ';

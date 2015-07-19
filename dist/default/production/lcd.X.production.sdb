@@ -133,7 +133,7 @@
 [v _LCD_putrs LCD_putrs `(v  1 e 0 0 ]
 "69 /home/manolis/MPLABXProjects/lcd.X/main.c
 [v _main main `(i  1 e 2 0 ]
-"182
+"185
 [v _IO_Init IO_Init `(v  1 e 0 0 ]
 "158 /opt/microchip/xc8/v1.33/include/pic16f876a.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -157,14 +157,14 @@
 [v _PORTCbits PORTCbits `VES50  1 e 1 @7 ]
 "1018
 [v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
-[s S306 . 1 `uc 1 ADON 1 0 :1:0 
+[s S310 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 GO_nDONE 1 0 :1:2 
 `uc 1 CHS 1 0 :3:3 
 `uc 1 ADCS 1 0 :2:6 
 ]
 "1055
-[s S312 . 1 `uc 1 . 1 0 :2:0 
+[s S316 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GO 1 0 :1:2 
 `uc 1 CHS0 1 0 :1:3 
 `uc 1 CHS1 1 0 :1:4 
@@ -172,14 +172,14 @@
 `uc 1 ADCS0 1 0 :1:6 
 `uc 1 ADCS1 1 0 :1:7 
 ]
-[s S320 . 1 `uc 1 . 1 0 :2:0 
+[s S324 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nDONE 1 0 :1:2 
 ]
-[s S323 . 1 `uc 1 . 1 0 :2:0 
+[s S327 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GO_DONE 1 0 :1:2 
 ]
-[u S326 . 1 `S306 1 . 1 0 `S312 1 . 1 0 `S320 1 . 1 0 `S323 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES326  1 e 1 @31 ]
+[u S330 . 1 `S310 1 . 1 0 `S316 1 . 1 0 `S324 1 . 1 0 `S327 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES330  1 e 1 @31 ]
 [s S116 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
@@ -206,19 +206,19 @@
 [v _TRISCbits TRISCbits `VES50  1 e 1 @135 ]
 "1946
 [v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
-[s S352 . 1 `uc 1 PCFG 1 0 :4:0 
+[s S356 . 1 `uc 1 PCFG 1 0 :4:0 
 `uc 1 . 1 0 :2:4 
 `uc 1 ADCS2 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "1971
-[s S357 . 1 `uc 1 PCFG0 1 0 :1:0 
+[s S361 . 1 `uc 1 PCFG0 1 0 :1:0 
 `uc 1 PCFG1 1 0 :1:1 
 `uc 1 PCFG2 1 0 :1:2 
 `uc 1 PCFG3 1 0 :1:3 
 ]
-[u S362 . 1 `S352 1 . 1 0 `S357 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES362  1 e 1 @159 ]
+[u S366 . 1 `S356 1 . 1 0 `S361 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES366  1 e 1 @159 ]
 "2010
 [v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
 "2016
@@ -255,12 +255,16 @@
 "69 /home/manolis/MPLABXProjects/lcd.X/main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"143
-[v main@i i `i  1 a 2 75 ]
+"146
+[v main@i i `i  1 a 2 71 ]
 "72
 [v main@current_str current_str `[5][9]uc  1 a 45 0 ]
 "71
 [v main@current current `[5]d  1 a 15 45 ]
+"76
+[v main@current_sub current_sub `[5]d  1 a 15 63 ]
+"75
+[v main@current_mult current_mult `[5]d  1 a 15 48 ]
 [s S19 . 5 `*.39VEuc 1 PORT 2 0 `uc 1 RS 1 2 :3:0 
 `uc 1 EN 1 2 :3:3 
 `uc 1 D4 1 3 :3:0 
@@ -270,16 +274,20 @@
 ]
 "73
 [v main@lcd lcd `S19  1 a 5 60 ]
-[v main@screen_id screen_id `uc  1 a 1 74 ]
-[v main@stop_channel stop_channel `uc  1 a 1 69 ]
-[v main@start_channel start_channel `uc  1 a 1 68 ]
+[v main@screen_id screen_id `uc  1 a 1 70 ]
+[v main@stop_channel stop_channel `uc  1 a 1 65 ]
+[v main@start_channel start_channel `uc  1 a 1 79 ]
 "70
-[v main@toggled_power toggled_power `uc  1 a 1 67 ]
-[v main@toggled_backlight toggled_backlight `uc  1 a 1 66 ]
-[v main@toggled_screen toggled_screen `uc  1 a 1 65 ]
+[v main@toggled_power toggled_power `uc  1 a 1 78 ]
+[v main@toggled_backlight toggled_backlight `uc  1 a 1 77 ]
+[v main@toggled_screen toggled_screen `uc  1 a 1 76 ]
 "73
 [v main@F1209 F1209 `S19  1 s 5 F1209 ]
-"180
+"74
+[v main@F1211 F1211 `[5]d  1 s 15 F1211 ]
+"75
+[v main@F1213 F1213 `[5]d  1 s 15 F1213 ]
+"183
 } 0
 "492 /opt/microchip/xc8/v1.33/sources/common/doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -288,11 +296,11 @@
 "1210
 [v sprintf@vd vd `ul  1 a 4 14 ]
 "1238
-[v sprintf@vd_465 vd `ul  1 a 4 18 ]
-[s S450 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
+[v sprintf@vd_469 vd `ul  1 a 4 18 ]
+[s S454 . 4 `*.1DCCuc 1 _cp 2 0 `ui 1 _len 2 2 ]
 "525
-[u S453 . 4 `ul 1 _val 4 0 `S450 1 _str 4 0 ]
-[v sprintf@_val _val `S453  1 a 4 25 ]
+[u S457 . 4 `ul 1 _val 4 0 `S454 1 _str 4 0 ]
+[v sprintf@_val _val `S457  1 a 4 25 ]
 "516
 [v sprintf@fval fval `d  1 a 3 35 ]
 [v sprintf@integ integ `d  1 a 3 22 ]
@@ -490,7 +498,7 @@
 "15 /opt/microchip/xc8/v1.33/sources/common/ftneg.c
 [v ___ftneg __ftneg `(f  1 e 3 0 ]
 {
-[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+[v ___ftneg@f1 f1 `f  1 p 3 7 ]
 "20
 } 0
 "4 /opt/microchip/xc8/v1.33/sources/common/ftge.c
@@ -567,10 +575,10 @@
 [v LCD_Out@c c `uc  1 a 1 3 ]
 "48
 } 0
-"182 /home/manolis/MPLABXProjects/lcd.X/main.c
+"185 /home/manolis/MPLABXProjects/lcd.X/main.c
 [v _IO_Init IO_Init `(v  1 e 0 0 ]
 {
-"199
+"202
 } 0
 "32 /home/manolis/MPLABXProjects/lcd.X/adc.c
 [v _ADC_Read ADC_Read `(ul  1 e 4 0 ]
