@@ -115,11 +115,11 @@
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
 "49 /opt/microchip/xc8/v1.33/sources/pic/ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"14 /home/manolis/MPLABXProjects/lcd.X/adc.c
+"14 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c
 [v _ADC_Init ADC_Init `(v  1 e 0 0 ]
 "32
 [v _ADC_Read ADC_Read `(ul  1 e 4 0 ]
-"18 /home/manolis/MPLABXProjects/lcd.X/lcd.c
+"18 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c
 [v _LCD_Out LCD_Out `(v  1 e 0 0 ]
 "50
 [v _LCD_Write LCD_Write `(v  1 e 0 0 ]
@@ -131,7 +131,7 @@
 [v _LCD_puts LCD_puts `(v  1 e 0 0 ]
 "141
 [v _LCD_putrs LCD_putrs `(v  1 e 0 0 ]
-"69 /home/manolis/MPLABXProjects/lcd.X/main.c
+"69 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c
 [v _main main `(i  1 e 2 0 ]
 "185
 [v _IO_Init IO_Init `(v  1 e 0 0 ]
@@ -250,9 +250,9 @@
 `uc 1 D6 1 4 :3:0 
 `uc 1 D7 1 4 :3:3 
 ]
-"16 /home/manolis/MPLABXProjects/lcd.X/lcd.c
+"16 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c
 [v _lcd lcd `S19  1 e 5 0 ]
-"69 /home/manolis/MPLABXProjects/lcd.X/main.c
+"69 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c
 [v _main main `(i  1 e 2 0 ]
 {
 "146
@@ -508,7 +508,7 @@
 [v ___ftge@ff2 ff2 `f  1 p 3 10 ]
 "13
 } 0
-"133 /home/manolis/MPLABXProjects/lcd.X/lcd.c
+"133 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c
 [v _LCD_puts LCD_puts `(v  1 e 0 0 ]
 {
 [v LCD_puts@a a `*.5uc  1 a 1 wreg ]
@@ -575,12 +575,12 @@
 [v LCD_Out@c c `uc  1 a 1 3 ]
 "48
 } 0
-"185 /home/manolis/MPLABXProjects/lcd.X/main.c
+"185 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c
 [v _IO_Init IO_Init `(v  1 e 0 0 ]
 {
 "202
 } 0
-"32 /home/manolis/MPLABXProjects/lcd.X/adc.c
+"32 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c
 [v _ADC_Read ADC_Read `(ul  1 e 4 0 ]
 {
 [v ADC_Read@channel channel `uc  1 a 1 wreg ]
@@ -607,7 +607,7 @@
 [v ___lldiv@dividend dividend `ul  1 p 4 4 ]
 "31
 } 0
-"14 /home/manolis/MPLABXProjects/lcd.X/adc.c
+"14 /home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c
 [v _ADC_Init ADC_Init `(v  1 e 0 0 ]
 {
 "30

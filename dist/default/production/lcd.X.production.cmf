@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/cgtxV2yX1.obj
+$/tmp/cgtw2lviu.obj
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 $dist/default/production/lcd.X.production.obj
@@ -257,30 +257,30 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":1448 7D2 text1 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":545 7DD text1 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":1547 7DE text1 CODE
-"/tmp/cgtzeYcKC":891 7E3 cinit CODE
-"/tmp/cgtzeYcKC":894 7E3 cinit CODE
-"/tmp/cgtzeYcKC":949 7E3 cinit CODE
-"/tmp/cgtzeYcKC":950 7E4 cinit CODE
-"/tmp/cgtzeYcKC":951 7E5 cinit CODE
-"/tmp/cgtzeYcKC":952 7E6 cinit CODE
-"/tmp/cgtzeYcKC":953 7E7 cinit CODE
-"/tmp/cgtzeYcKC":954 7E8 cinit CODE
-"/tmp/cgtzeYcKC":955 7E9 cinit CODE
-"/tmp/cgtzeYcKC":956 7EA cinit CODE
-"/tmp/cgtzeYcKC":957 7EB cinit CODE
-"/tmp/cgtzeYcKC":958 7EC cinit CODE
-"/tmp/cgtzeYcKC":962 7F1 cinit CODE
-"/tmp/cgtzeYcKC":963 7F2 cinit CODE
-"/tmp/cgtzeYcKC":964 7F3 cinit CODE
-"/tmp/cgtzeYcKC":965 7F4 cinit CODE
-"/tmp/cgtzeYcKC":966 7F5 cinit CODE
-"/tmp/cgtzeYcKC":967 7F6 cinit CODE
-"/tmp/cgtzeYcKC":968 7F7 cinit CODE
-"/tmp/cgtzeYcKC":969 7F8 cinit CODE
-"/tmp/cgtzeYcKC":970 7F9 cinit CODE
-"/tmp/cgtzeYcKC":976 7FC cinit CODE
-"/tmp/cgtzeYcKC":977 7FC cinit CODE
-"/tmp/cgtzeYcKC":978 7FD cinit CODE
+"/tmp/cgtJqeBnJ":891 7E3 cinit CODE
+"/tmp/cgtJqeBnJ":894 7E3 cinit CODE
+"/tmp/cgtJqeBnJ":949 7E3 cinit CODE
+"/tmp/cgtJqeBnJ":950 7E4 cinit CODE
+"/tmp/cgtJqeBnJ":951 7E5 cinit CODE
+"/tmp/cgtJqeBnJ":952 7E6 cinit CODE
+"/tmp/cgtJqeBnJ":953 7E7 cinit CODE
+"/tmp/cgtJqeBnJ":954 7E8 cinit CODE
+"/tmp/cgtJqeBnJ":955 7E9 cinit CODE
+"/tmp/cgtJqeBnJ":956 7EA cinit CODE
+"/tmp/cgtJqeBnJ":957 7EB cinit CODE
+"/tmp/cgtJqeBnJ":958 7EC cinit CODE
+"/tmp/cgtJqeBnJ":962 7F1 cinit CODE
+"/tmp/cgtJqeBnJ":963 7F2 cinit CODE
+"/tmp/cgtJqeBnJ":964 7F3 cinit CODE
+"/tmp/cgtJqeBnJ":965 7F4 cinit CODE
+"/tmp/cgtJqeBnJ":966 7F5 cinit CODE
+"/tmp/cgtJqeBnJ":967 7F6 cinit CODE
+"/tmp/cgtJqeBnJ":968 7F7 cinit CODE
+"/tmp/cgtJqeBnJ":969 7F8 cinit CODE
+"/tmp/cgtJqeBnJ":970 7F9 cinit CODE
+"/tmp/cgtJqeBnJ":976 7FC cinit CODE
+"/tmp/cgtJqeBnJ":977 7FC cinit CODE
+"/tmp/cgtJqeBnJ":978 7FD cinit CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":4 801 text6 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":6 804 text6 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul8.c":43 805 text6 CODE
@@ -315,75 +315,75 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":438 BF1 text2 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":439 BF6 text2 CODE
 "/opt/microchip/xc8/v1.33/sources/common/doprnt.c":440 C5F text2 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":69 C7E maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":70 C7E maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":73 C85 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":74 C8E maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":75 C9F maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":76 CB7 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":79 CCD maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":80 CE4 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":81 CE9 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":86 CEE maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":87 CF7 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":89 D00 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":90 D04 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":91 D05 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":92 D06 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":93 D06 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":96 D07 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":97 D13 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":98 D17 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":99 D18 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":100 D1B maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":104 D1E maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":105 D24 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":107 D2F maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":108 D33 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":109 D34 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":110 D35 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":111 D35 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":112 D36 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":114 D36 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":115 D38 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":116 D39 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":117 D3B maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":121 D3C maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":122 D3E maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":123 D4A maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":124 D50 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":126 D51 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":127 D53 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":128 D5F maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":129 D6B maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":131 D71 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":132 D75 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":133 D80 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":137 D8C maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":138 D91 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":139 D94 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":142 D96 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":143 D9C maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":146 DA2 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":147 DBA maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":149 E63 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":150 E8B maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":151 EA4 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":154 EDA maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":146 F31 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":160 F3A maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":161 F41 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":163 F4C maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":164 F51 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":165 F53 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":167 F54 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":170 F55 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":171 F61 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":172 F65 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":173 F66 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":174 F68 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":178 F69 maintext CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":180 FFF maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":69 C7E maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":70 C7E maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":73 C85 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":74 C8E maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":75 C9F maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":76 CB7 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":79 CCD maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":80 CE4 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":81 CE9 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":86 CEE maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":87 CF7 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":89 D00 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":90 D04 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":91 D05 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":92 D06 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":93 D06 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":96 D07 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":97 D13 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":98 D17 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":99 D18 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":100 D1B maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":104 D1E maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":105 D24 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":107 D2F maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":108 D33 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":109 D34 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":110 D35 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":111 D35 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":112 D36 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":114 D36 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":115 D38 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":116 D39 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":117 D3B maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":121 D3C maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":122 D3E maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":123 D4A maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":124 D50 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":126 D51 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":127 D53 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":128 D5F maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":129 D6B maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":131 D71 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":132 D75 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":133 D80 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":137 D8C maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":138 D91 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":139 D94 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":142 D96 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":143 D9C maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":146 DA2 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":147 DBA maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":149 E63 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":150 E8B maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":151 EA4 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":154 EDA maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":146 F31 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":160 F3A maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":161 F41 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":163 F4C maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":164 F51 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":165 F53 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":167 F54 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":170 F55 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":171 F61 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":172 F65 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":173 F66 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":174 F68 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":178 F69 maintext CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":180 FFF maintext CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftge.c":4 1111 text19 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftge.c":6 1111 text19 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftge.c":7 1115 text19 CODE
@@ -413,21 +413,21 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/float.c":83 11D3 text17 CODE
 "/opt/microchip/xc8/v1.33/sources/common/float.c":84 11D6 text17 CODE
 "/opt/microchip/xc8/v1.33/sources/common/float.c":86 11D7 text17 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":32 11D8 text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":34 11DB text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":37 11E3 text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":38 11E7 text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":39 11EB text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":42 11EB text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":43 11EE text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":46 11EF text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":47 11F9 text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":49 11FE text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":51 120A text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":53 120B text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":55 120D text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":49 122E text27 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":59 1235 text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":32 11D8 text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":34 11DB text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":37 11E3 text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":38 11E7 text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":39 11EB text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":42 11EB text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":43 11EE text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":46 11EF text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":47 11F9 text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":49 11FE text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":51 120A text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":53 120B text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":55 120D text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":49 122E text27 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":59 1235 text27 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":44 1251 text14 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":49 1251 text14 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":50 1262 text14 CODE
@@ -449,55 +449,55 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":70 12C8 text14 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":71 12CB text14 CODE
 "/opt/microchip/xc8/v1.33/sources/common/fttol.c":72 12D6 text14 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":116 12DF text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":118 12E0 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":119 12F6 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":121 1305 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":122 131E text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":123 1323 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":125 133D text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":127 1344 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":128 135D text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":129 1362 text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":131 137C text22 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":61 137D text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":63 137D text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":69 138E text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":70 1398 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":71 139B text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":72 139C text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":73 13A6 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":74 13A9 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":75 13AA text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":76 13B4 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":91 13B7 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":94 13C2 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":95 13C8 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":96 13D3 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":97 13D9 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":98 13E4 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":101 13EA text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":104 13F0 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":107 13FC text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":109 1408 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":111 1425 text23 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":18 1430 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":20 1431 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":21 1433 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":22 1449 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":24 144A text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":27 1461 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":28 1463 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":29 147A text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":31 147B text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":34 1493 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":35 1495 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":36 14A9 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":38 14AA text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":41 14BF text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":42 14C1 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":43 14D8 text25 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":45 14D9 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":116 12DF text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":118 12E0 text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":119 12F6 text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":121 1305 text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":122 131E text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":123 1323 text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":125 133D text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":127 1344 text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":128 135D text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":129 1362 text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":131 137C text22 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":61 137D text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":63 137D text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":69 138E text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":70 1398 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":71 139B text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":72 139C text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":73 13A6 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":74 13A9 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":75 13AA text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":76 13B4 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":91 13B7 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":94 13C2 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":95 13C8 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":96 13D3 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":97 13D9 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":98 13E4 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":101 13EA text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":104 13F0 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":107 13FC text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":109 1408 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":111 1425 text23 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":18 1430 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":20 1431 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":21 1433 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":22 1449 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":24 144A text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":27 1461 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":28 1463 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":29 147A text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":31 147B text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":34 1493 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":35 1495 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":36 14A9 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":38 14AA text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":41 14BF text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":42 14C1 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":43 14D8 text25 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":45 14D9 text25 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftmul.c":62 14F2 text5 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftmul.c":67 14F2 text5 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftmul.c":68 1503 text5 CODE
@@ -601,57 +601,57 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/ftneg.c":17 1D7B text18 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftneg.c":18 1D82 text18 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftneg.c":20 1D84 text18 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":185 1D85 text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":188 1D85 text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":190 1D88 text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":191 1D89 text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":192 1D8A text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":193 1D8B text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":196 1D8C text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":197 1D8D text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":199 1D8E text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":200 1D91 text26 CODE
-"/home/manolis/MPLABXProjects/lcd.X/main.c":202 1D92 text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":185 1D85 text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":188 1D85 text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":190 1D88 text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":191 1D89 text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":192 1D8A text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":193 1D8B text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":196 1D8C text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":197 1D8D text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":199 1D8E text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":200 1D91 text26 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/main.c":202 1D92 text26 CODE
 "/opt/microchip/xc8/v1.33/sources/common/isdigit.c":8 1D93 text3 CODE
 "/opt/microchip/xc8/v1.33/sources/common/isdigit.c":14 1D94 text3 CODE
-"/tmp/cgtzeYcKC":923 1DA1 inittext CODE
-"/tmp/cgtzeYcKC":924 1DA1 inittext CODE
-"/tmp/cgtzeYcKC":925 1DA2 inittext CODE
-"/tmp/cgtzeYcKC":926 1DA3 inittext CODE
-"/tmp/cgtzeYcKC":927 1DA4 inittext CODE
-"/tmp/cgtzeYcKC":934 1DA5 inittext CODE
-"/tmp/cgtzeYcKC":935 1DA5 inittext CODE
-"/tmp/cgtzeYcKC":936 1DA8 inittext CODE
-"/tmp/cgtzeYcKC":937 1DA9 inittext CODE
-"/tmp/cgtzeYcKC":938 1DAA inittext CODE
-"/tmp/cgtzeYcKC":939 1DAB inittext CODE
-"/tmp/cgtzeYcKC":940 1DAC inittext CODE
-"/tmp/cgtzeYcKC":941 1DAD inittext CODE
-"/tmp/cgtzeYcKC":942 1DAE inittext CODE
-"/tmp/cgtzeYcKC":943 1DAF inittext CODE
-"/tmp/cgtzeYcKC":944 1DB0 inittext CODE
-"/tmp/cgtzeYcKC":945 1DB1 inittext CODE
+"/tmp/cgtJqeBnJ":923 1DA1 inittext CODE
+"/tmp/cgtJqeBnJ":924 1DA1 inittext CODE
+"/tmp/cgtJqeBnJ":925 1DA2 inittext CODE
+"/tmp/cgtJqeBnJ":926 1DA3 inittext CODE
+"/tmp/cgtJqeBnJ":927 1DA4 inittext CODE
+"/tmp/cgtJqeBnJ":934 1DA5 inittext CODE
+"/tmp/cgtJqeBnJ":935 1DA5 inittext CODE
+"/tmp/cgtJqeBnJ":936 1DA8 inittext CODE
+"/tmp/cgtJqeBnJ":937 1DA9 inittext CODE
+"/tmp/cgtJqeBnJ":938 1DAA inittext CODE
+"/tmp/cgtJqeBnJ":939 1DAB inittext CODE
+"/tmp/cgtJqeBnJ":940 1DAC inittext CODE
+"/tmp/cgtJqeBnJ":941 1DAD inittext CODE
+"/tmp/cgtJqeBnJ":942 1DAE inittext CODE
+"/tmp/cgtJqeBnJ":943 1DAF inittext CODE
+"/tmp/cgtJqeBnJ":944 1DB0 inittext CODE
+"/tmp/cgtJqeBnJ":945 1DB1 inittext CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftsub.c":18 1DB2 text15 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftsub.c":23 1DB2 text15 CODE
 "/opt/microchip/xc8/v1.33/sources/common/ftsub.c":24 1DB6 text15 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":14 1DCE text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":16 1DCE text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":18 1DD2 text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":19 1DD8 text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":21 1DDB text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":23 1DDF text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":25 1DE0 text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":26 1DE4 text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":28 1DE9 text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/adc.c":30 1DEC text29 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":133 1DED text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":135 1DEE text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":136 1DF9 text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":135 1E05 text20 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":141 1E0C text21 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":143 1E0D text21 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":144 1E1A text21 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":143 1E27 text21 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":14 1DCE text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":16 1DCE text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":18 1DD2 text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":19 1DD8 text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":21 1DDB text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":23 1DDF text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":25 1DE0 text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":26 1DE4 text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":28 1DE9 text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/adc.c":30 1DEC text29 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":133 1DED text20 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":135 1DEE text20 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":136 1DF9 text20 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":135 1E05 text20 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":141 1E0C text21 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":143 1E0D text21 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":144 1E1A text21 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":143 1E27 text21 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul16.c":15 1E2E text11 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul16.c":43 1E2E text11 CODE
 "/opt/microchip/xc8/v1.33/sources/common/Umul16.c":45 1E30 text11 CODE
@@ -692,13 +692,13 @@ $dist/default/production/lcd.X.production.obj
 "/opt/microchip/xc8/v1.33/sources/common/awmod.c":32 1EDB text7 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awmod.c":33 1EDE text7 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awmod.c":34 1EE3 text7 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":50 1EEA text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":52 1EEB text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":53 1F02 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":55 1F08 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":56 1F21 text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":57 1F2A text24 CODE
-"/home/manolis/MPLABXProjects/lcd.X/lcd.c":59 1F44 text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":50 1EEA text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":52 1EEB text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":53 1F02 text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":55 1F08 text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":56 1F21 text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":57 1F2A text24 CODE
+"/home/manolis/MPLABXProjects/pic-atx-psu-controller.X/lcd.c":59 1F44 text24 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awdiv.c":6 1F45 text8 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awdiv.c":14 1F45 text8 CODE
 "/opt/microchip/xc8/v1.33/sources/common/awdiv.c":15 1F48 text8 CODE
@@ -776,12 +776,12 @@ ___ftadd@f2 58 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.ob
 __end_of_LCD_Out 29E4 0 CODE 0 text25 dist/default/production/lcd.X.production.obj
 ___ftsub@f1 65 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 _main 18FC 0 CODE 0 maintext dist/default/production/lcd.X.production.obj
-___sp 0 0 STACK 2 stack /tmp/cgtxV2yX1.obj
+___sp 0 0 STACK 2 stack /tmp/cgtw2lviu.obj
 btemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ttemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
-start 0 0 CODE 0 init /tmp/cgtxV2yX1.obj
+start 0 0 CODE 0 init /tmp/cgtw2lviu.obj
 ?___ftadd 55 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 LCD_puts@i 79 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ___fttol@f1 4E 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
@@ -794,7 +794,7 @@ _TRISA 85 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _TRISB 86 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _TRISC 87 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _PORTA 5 0 ABS 0 - dist/default/production/lcd.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec /tmp/cgtxV2yX1.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgtw2lviu.obj
 _PORTB 6 0 ABS 0 - dist/default/production/lcd.X.production.obj
 _PORTC 7 0 ABS 0 - dist/default/production/lcd.X.production.obj
 ltemp0 7E 0 ABS 0 - dist/default/production/lcd.X.production.obj
@@ -852,7 +852,7 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 ?___ftmul 35 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 sprintf@ap AD 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/cgtxV2yX1.obj
+___int_sp 0 0 STACK 2 stack /tmp/cgtw2lviu.obj
 ?___lldiv 70 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ?___awdiv 77 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
 ___lltoft 1028 0 CODE 0 text12 dist/default/production/lcd.X.production.obj
@@ -894,14 +894,14 @@ __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
 ?_scale 45 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 ___ftge 2222 0 CODE 0 text19 dist/default/production/lcd.X.production.obj
-stackhi 0 0 ABS 0 - /tmp/cgtxV2yX1.obj
+stackhi 0 0 ABS 0 - /tmp/cgtw2lviu.obj
 sprintf@sp C6 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
 _fround 1086 0 CODE 0 text4 dist/default/production/lcd.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 ___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
-stacklo 0 0 ABS 0 - /tmp/cgtxV2yX1.obj
+stacklo 0 0 ABS 0 - /tmp/cgtw2lviu.obj
 ___bmul 1002 0 CODE 0 text6 dist/default/production/lcd.X.production.obj
 __Hinit 0 0 CODE 0 init -
 __Linit 0 0 CODE 0 init -
@@ -1093,18 +1093,18 @@ __stringdata 20F8 0 STRING 0 strings dist/default/production/lcd.X.production.ob
 __tdiv_to_l_@exp1 25 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 __div_to_l_@cntr 24 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
 init_ram0 3B4A 0 CODE 0 inittext dist/default/production/lcd.X.production.obj
-intlevel0 0 0 CODE 0 functab /tmp/cgtxV2yX1.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgtw2lviu.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
-intlevel1 0 0 CODE 0 functab /tmp/cgtxV2yX1.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgtw2lviu.obj
 __end_of_LCD_Write 3E8A 0 CODE 0 text24 dist/default/production/lcd.X.production.obj
 __size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
-intlevel2 0 0 CODE 0 functab /tmp/cgtxV2yX1.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgtw2lviu.obj
 ___lltoft@exp 34 0 BANK0 1 cstackBANK0 dist/default/production/lcd.X.production.obj
-intlevel3 0 0 CODE 0 functab /tmp/cgtxV2yX1.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgtw2lviu.obj
 _sprintf$467 A9 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
-intlevel4 0 0 CODE 0 functab /tmp/cgtxV2yX1.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgtw2lviu.obj
 __tdiv_to_l_@f2 73 0 COMMON 1 cstackCOMMON dist/default/production/lcd.X.production.obj
-intlevel5 0 0 CODE 0 functab /tmp/cgtxV2yX1.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgtw2lviu.obj
 __end_of_ADC_Read 24A2 0 CODE 0 text27 dist/default/production/lcd.X.production.obj
 main@start_channel EF 0 BANK1 1 cstackBANK1 dist/default/production/lcd.X.production.obj
 __size_of_LCD_putc 0 0 ABS 0 - dist/default/production/lcd.X.production.obj
