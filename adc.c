@@ -1,8 +1,10 @@
 /*
  * File:   adc.c
- * Author: Manolis Agkopian
  *
  * Created on May 1, 2015, 10:01 PM
+ * 
+ * Copyright (c) 2015 Manolis Agkopian
+ * See the file LICENSE for copying permission.
  */
 
 #define _XTAL_FREQ 8000000

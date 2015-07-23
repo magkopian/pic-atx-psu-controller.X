@@ -1,10 +1,12 @@
 /* 
  * File:   lcd.h
- * Author: Manolis Agkopian
  *
  * Created on April 29, 2015, 5:10 PM
  *
  * LCD library header file.
+ * 
+ * Copyright (c) 2015 Manolis Agkopian
+ * See the file LICENSE for copying permission.
  */
 
 #ifndef LCD_H

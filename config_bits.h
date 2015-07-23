@@ -1,10 +1,12 @@
 /* 
  * File:   config_bits.h
- * Author: Manolis Agkopian
- *
+ * 
  * Created on April 29, 2015, 6:54 PM
  *
- * Example configuration for PIC16F876A
+ * Configuration for PIC16F876A
+ * 
+ * Copyright (c) 2015 Manolis Agkopian
+ * See the file LICENSE for copying permission.
  */
 
 #ifndef CONFIG_BITS_H
